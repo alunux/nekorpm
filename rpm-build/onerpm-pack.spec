@@ -35,8 +35,8 @@ rm -rf ${RPM_BUILD_ROOT}
 %attr(755,root,root) %{_bindir}/onerpm-pack
 
 %changelog
-* Wed Aug 19 2015 La Ode Muh. Fadlun Akbar <fadlun.net@gmail.com> - 1.0-1
-- onerpm-pack 1.0 release
 * Sun Nov 15 2015 La Ode Muh. Fadlun Akbar <fadlun.net@gmail.com> - 1.1-1
 - onerpm-pack 1.1 release
 - Add build environment for onerpm packaging
+* Wed Aug 19 2015 La Ode Muh. Fadlun Akbar <fadlun.net@gmail.com> - 1.0-1
+- onerpm-pack 1.0 release
