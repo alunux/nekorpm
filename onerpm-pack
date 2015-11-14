@@ -1,0 +1,147 @@
+#!/bin/bash
+
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+#   Copyright (C) La Ode Muh. Fadlun Akbar
+
+aplikasi="$@"
+distro="$(rpm -E %{?fedora})"
+temp="/tmp/onerpm-pack/"
+packroot="$HOME/.onerpm/$distro"
+skip=false;
+daftar_paket=`cat /usr/share/onerpm-pack/daftar.txt`
+
+setup ()
+{
+  echo -e "-----------------------------------------------------------" \
+          "\n- Apakah Anda yakin akan melakukan setup untuk Fedora $distro? -" \
+          "\n-     Hal ini akan menyebabkan setup-an lama dihapus      -" \
+          "\n-----------------------------------------------------------"
+  read -p "Lanjutkan? [Y/n]: " lanjut
+  case "$lanjut" in
+    [Yy]|"" )
+      sudo rm -rf $packroot
+      sudo dnf --installroot=$packroot --releasever=$distro install $daftar_paket
+      if [ $? -ne 0 ]; then
+        echo -e "Terjadi kesalahan, setup dibatalkan\n"
+        sudo rm -rf $packroot
+        exit 1
+      fi
+      echo -e "Proses setup telah selesai. Sekarang Anda dapat melakukan" \
+              "pemaketan ONERPM menggunakan onerpm-pack.\n"
+      exit 0
+      ;;
+    [Nn] )
+      exit 1
+      ;;
+  esac
+}
+
+proses_download ()
+{
+  mkdir -p $temp
+  rpm -q $1 &> /dev/null
+  if [ $? -ne 0 ]; then
+    cd $temp
+    dnf --installroot=$packroot --releasever=$distro download --resolve $1
+    if [ $? -ne 0 ]; then
+      echo "proses download gagal"
+      rm -rf $temp
+      exit 1
+    fi
+    echo "proses download $1 selesai"
+    skip=false;
+  else
+    echo "paket $1 telah ada di sistem!"
+    echo "paket $1 tidak akan didownload"
+    rm -rf $temp
+    skip=true;
+  fi
+}
+
+proses_paket ()
+{
+  if [ $skip = false ]; then
+    paket="$1-f$distro-$(arch).onerpm"
+    echo "memaketkan $1 ke .onerpm ..."
+    info1="$1.$(arch)"
+    info2="$1.noarch"
+    dnf info $info1 &> /dev/null
+    if [ $? -ne 0 ]; then
+      dnf info $info2 > keterangan
+    else
+      dnf info $info1 > keterangan
+    fi
+    {
+    createrepo_c .
+    tar -czf $paket *
+    } &> /dev/null
+    if [ $? -ne 0 ]; then
+      echo "proses pemaketan gagal"
+      rm -rf $temp
+      exit 1
+    fi
+    mv $paket $(cd -)
+    rm -rf $temp
+    echo "pemaketan $1 selesai"
+    rm -rf $temp
+    cd - &> /dev/null
+  fi
+  printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+}
+
+if [ $# -eq 0 ]; then
+  echo -e "Nama paket belum disebutkan, minimal sebutkan 1 paket." \
+          "\nJalankan perintah \"onerpm-pack --fedora=versiFedora setup\"" \
+          "jika Anda baru pertama kali menggunakan onerpm-pack." \
+          "\n\nPenggunaan\t: onerpm-pack --fedora=versiFedora app1 app2 ... appN" \
+          "\nContoh 1\t: onerpm-pack --fedora=23 geany" \
+          "\nContoh 2\t: onerpm-pack --fedora=23 geany texmaker gedit" \
+          "\nContoh 3\t: onerpm-pack --fedora=23 setup\n"
+  exit 1;
+fi
+
+if [ $# -le 2 ]; then
+  if [[ "$1" = "setup" && "$2" = "--fedora="* ]]; then
+    ver="$2"
+    if [[ ${#ver} -gt 11 || ${#ver} -lt 11 ]]; then
+      echo -e "Versi Fedora tidak valid\n"
+      exit 1
+    fi
+    distro="${ver: -2}"
+    setup
+  elif [[ "$2" = "setup" && "$1" = "--fedora="* ]]; then
+    ver="$1"
+    if [[ ${#ver} -gt 11 || ${#ver} -lt 11 ]]; then
+      echo -e "Versi Fedora tidak valid\n"
+      exit 1
+    fi
+    distro="${ver: -2}"
+    setup
+  else
+      echo -e "Perintah tidak tersedia\n"
+      exit
+  fi
+else
+    echo -e "Perintah tidak teredia\n"
+    exit 1
+fi
+
+printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+for i in $aplikasi
+do
+  echo -e "Pembuatan paket ONERPM untuk $i dilakukan ...\n"
+  proses_download $i
+  proses_paket $i
+done
