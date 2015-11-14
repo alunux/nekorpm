@@ -29,7 +29,7 @@ paket_korup ()
 			cek="ok";
 		else
 			echo -e "File .rpm tidak ditemukan dalam paket onerpm Anda." \
-							"\nPastikan:\n - paket onerpm Anda tidak korup\n - " \
+			        "\nPastikan:\n - paket onerpm Anda tidak korup\n - " \
 							"unduhlah paket onerpm dari sumber terpercaya\n";
 			cek="no"
 			bersihkan;
