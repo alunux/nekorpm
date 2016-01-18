@@ -19,8 +19,8 @@ distro="$(rpm -E %{?fedora})"
 temp="/tmp/onerpm-pack/"
 tempBuild="/tmp/onerpm-root"
 skip=false;
-daftar_paket_64=`cat f23-mini-x86-64`
-daftar_paket_32=`cat f23-mini-x86`
+daftar_paket_64=`cat /usr/share/onerpm-pack/f23-mini-x86-64`
+daftar_paket_32=`cat /usr/share/onerpm-pack/f23-mini-x86`
 
 lokasi ()
 {
