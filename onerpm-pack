@@ -15,34 +15,134 @@
 #
 #   Copyright (C) La Ode Muh. Fadlun Akbar
 
-aplikasi="$@"
 distro="$(rpm -E %{?fedora})"
 temp="/tmp/onerpm-pack/"
-packroot="$HOME/.onerpm/$distro"
+tempBuild="/tmp/onerpm-root"
 skip=false;
-daftar_paket=`cat /usr/share/onerpm-pack/daftar.txt`
+daftar_paket_64=`cat f23-mini-x86-64`
+daftar_paket_32=`cat f23-mini-x86`
+
+lokasi ()
+{
+  while true; do
+    if [ "$(rpm -q --qf %{NAME} zenity)" = "zenity" ]; then
+      lokasi_paket=`zenity --file-selection --title="Pilih Paket ONERPM"`
+    elif [ "$(rpm -q --qf %{NAME} kdialog)" = "kdialog" ]; then
+      lokasi_paket=`kdialog --getopenfilename "$HOME" --title "Pilih Paket ONERPM"`
+    else
+      read -e -p "Lokasi paket onerpm [TAB untuk autocomplete]: " -i "/" lokasi_paket
+    fi
+    if [ -e $lokasi_paket ]; then
+      if [ "${lokasi_paket: -7}" = ".onerpm" ]; then
+        echo -e "\nPaket onerpm ditemukan!\n";
+        case "$1" in
+          32)
+            setup 32 $lokasi_paket
+            ;;
+          64)
+            setup 64 $lokasi_paket
+            ;;
+        esac
+        break;
+      else
+        if [[ "$lokasi_paket" == "" ]]; then
+          echo -e "\nAnda belum memilih paket ONERPM\n"
+        else
+          echo -e "\nBukan paket onerpm\n";
+        fi
+        cari=true;
+        while $cari; do
+          read -p "Lanjutkan pencarian? [Y/n]: " lanjut_cari
+          case "$lanjut_cari" in
+            [Yy]|"" )
+              break
+              ;;
+            [Nn] )
+              clear
+              cari=false
+              ;;
+          esac
+        done
+      fi
+    else
+      echo -e "\nLokasi tidak tersedia\n";
+      cari=true;
+      while $cari; do
+        read -p "Lanjutkan pencarian? [Y/n]: " lanjut_cari
+        case "$lanjut_cari" in
+          [Yy]|"" )
+            break
+            ;;
+          [Nn] )
+            clear
+            cari=false
+            ;;
+        esac
+      done
+    fi
+    if [ "$cari" = "false" ]; then
+      break;
+    fi
+  done
+}
 
 setup ()
 {
-  echo -e "-----------------------------------------------------------" \
-          "\n- Apakah Anda yakin akan melakukan setup untuk Fedora $distro? -" \
-          "\n-     Hal ini akan menyebabkan setup-an lama dihapus      -" \
-          "\n-----------------------------------------------------------"
+  echo -e "-------------------------------------------------------------" \
+          "\n- Anda akan membuat membuat lingkungan root untuk Fedora $distro -" \
+          "\n-    Hal ini diperlukan agar onerpm-pack dapat melakukan    -" \
+          "\n-      penyelesaian dependensi dan pemaketan aplikasi       -" \
+          "\n-                 dengan arsitektur $1-bit                  -" \
+          "\n-------------------------------------------------------------"
   read -p "Lanjutkan? [Y/n]: " lanjut
   case "$lanjut" in
     [Yy]|"" )
       sudo rm -rf $packroot
-      sudo dnf --installroot=$packroot --releasever=$distro install $daftar_paket
+      mkdir $tempBuild
+      if [[ -n "$2" ]]; then
+        tar -xzf $2 -C $tempBuild
+      else
+        if [[ $1 = "32" ]]; then
+          sudo dnf --installroot=$packroot --releasever=$distro --disablerepo='*' \
+                   --enablerepo=fedora download $daftar_paket_32 --destdir=$tempBuild
+        else
+          sudo dnf --installroot=$packroot --releasever=$distro --disablerepo='*' \
+                   --enablerepo=fedora download $daftar_paket_64 --destdir=$tempBuild
+        fi
+      fi
       if [ $? -ne 0 ]; then
         echo -e "Terjadi kesalahan, setup dibatalkan\n"
         sudo rm -rf $packroot
         exit 1
       fi
-      echo -e "Proses setup telah selesai. Sekarang Anda dapat melakukan" \
-              "pemaketan ONERPM menggunakan onerpm-pack.\n"
-      exit 0
+      sudo dnf --installroot=$packroot --releasever=$distro --disablerepo='*' \
+               install $tempBuild/*.rpm -y
+      if [[ -n "$2" ]]; then
+        echo -e "\nProses setup telah selesai\n"
+      else
+        echo -e "\nProses setup telah selesai" \
+                "\nApakah Anda ingin backup paket-paket yang dibutuhkan oleh" \
+                "\nonerpm-pack saat membuat lingkungan root tadi?"
+        read -p "Lanjutkan? [Y/n]: " lanjut
+        case "$lanjut" in
+          [Yy]|"" )
+            {
+            cd $tempBuild
+            tar -czf onerpm-root-backup.onerpm *
+            mv onerpm-root-backup.onerpm $(cd -)
+            rm -rf $tempBuild
+            cd -
+            } &> /dev/null
+            echo -e "\npembuatan backup selesai"
+            ;;
+          [Nn] )
+            rm -rf $tempBuild
+            ;;
+        esac
+      fi
       ;;
     [Nn] )
+      rm -rf $tempBuild
       exit 1
       ;;
   esac
@@ -51,7 +151,7 @@ setup ()
 proses_download ()
 {
   mkdir -p $temp
-  rpm -q $1 &> /dev/null
+  rpm --root=$packroot -q $1 &> /dev/null
   if [ $? -ne 0 ]; then
     cd $temp
     dnf --installroot=$packroot --releasever=$distro download --resolve $1
@@ -73,9 +173,9 @@ proses_download ()
 proses_paket ()
 {
   if [ $skip = false ]; then
-    paket="$1-f$distro-$(arch).onerpm"
+    paket="$1-f$distro-$arch.onerpm"
     echo "memaketkan $1 ke .onerpm ..."
-    info1="$1.$(arch)"
+    info1="$1.$arch"
     info2="$1.noarch"
     dnf info $info1 &> /dev/null
     if [ $? -ne 0 ]; then
@@ -101,47 +201,68 @@ proses_paket ()
   printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
 }
 
+utama ()
+{
+  aplikasi="$@"
+  printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+  for i in $aplikasi
+  do
+    echo -e "Pembuatan paket ONERPM untuk $i dilakukan ...\n"
+    proses_download $i
+    proses_paket $i
+  done
+}
+
 if [ $# -eq 0 ]; then
   echo -e "Nama paket belum disebutkan, minimal sebutkan 1 paket." \
-          "\nJalankan perintah \"onerpm-pack --fedora=versiFedora setup\"" \
-          "jika Anda baru pertama kali menggunakan onerpm-pack." \
-          "\n\nPenggunaan\t: onerpm-pack --fedora=versiFedora app1 app2 ... appN" \
-          "\nContoh 1\t: onerpm-pack --fedora=23 geany" \
-          "\nContoh 2\t: onerpm-pack --fedora=23 geany texmaker gedit" \
-          "\nContoh 3\t: onerpm-pack --fedora=23 setup\n"
+          "\n\nPenggunaan\t: onerpm-pack app1 app2 ... appN" \
+          "\nContoh 1\t: onerpm-pack geany" \
+          "\nContoh 2\t: onerpm-pack geany texmaker gedit\n"
   exit 1;
-fi
-
-if [ $# -le 2 ]; then
-  if [[ "$1" = "setup" && "$2" = "--fedora="* ]]; then
-    ver="$2"
-    if [[ ${#ver} -gt 11 || ${#ver} -lt 11 ]]; then
-      echo -e "Versi Fedora tidak valid\n"
-      exit 1
+elif [[ $# -ge 2 && ("$1" = "--arch=32" || `uname -m` = "i686") ]]; then
+  arch="i686"
+  if [[ `uname -m` = "x86_64" ]]; then
+    sudo sed -i 's/$basearch/i386/g' /etc/yum.repos.d/*.repo
+    packroot="$HOME/.onerpm/$distro-32"
+    if [[ ! -d "$HOME/.onerpm/$distro-32" ]]; then
+      echo -e "Apakah Anda mempunyai backup root sebelumnya?"
+      read -p "Lanjutkan? [Y/n]: " lanjut
+      case "$lanjut" in
+        [Yy]|"" )
+          lokasi 32
+          ;;
+        [Nn] )
+          setup 32
+          ;;
+      esac
     fi
-    distro="${ver: -2}"
-    setup
-  elif [[ "$2" = "setup" && "$1" = "--fedora="* ]]; then
-    ver="$1"
-    if [[ ${#ver} -gt 11 || ${#ver} -lt 11 ]]; then
-      echo -e "Versi Fedora tidak valid\n"
-      exit 1
-    fi
-    distro="${ver: -2}"
-    setup
-  else
-      echo -e "Perintah tidak tersedia\n"
-      exit
   fi
+  if [[ ! "$1" = "--arch=32" ]];  then
+    utama $@
+  else
+    shift 1
+    utama $@
+  fi
+elif [[ (! "$1" = "--arch=32") && `uname -m` = "x86_64" ]]; then
+  arch="x86_64"
+  packroot="$HOME/.onerpm/$distro-64"
+  if [[ ! -d "$HOME/.onerpm/$distro-64" ]]; then
+    echo -e "Apakah Anda mempunyai backup root sebelumnya?"
+      read -p "Lanjutkan? [Y/n]: " lanjut
+      case "$lanjut" in
+        [Yy]|"" )
+          lokasi 64
+          ;;
+        [Nn] )
+          setup 64
+          ;;
+      esac
+  fi
+  utama $@
 else
-    echo -e "Perintah tidak teredia\n"
-    exit 1
+  arch="x86_64"
+  shift 1
+  utama $@
 fi
 
-printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
-for i in $aplikasi
-do
-  echo -e "Pembuatan paket ONERPM untuk $i dilakukan ...\n"
-  proses_download $i
-  proses_paket $i
-done
+sudo sed -i 's/i386/$basearch/g' /etc/yum.repos.d/*.repo

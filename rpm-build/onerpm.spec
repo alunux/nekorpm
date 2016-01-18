@@ -6,14 +6,8 @@ License: GPL
 Group: Applications/System
 BuildRoot: %{_tmppath}/%{name}-root
 Requires: bash
-Requires: rpm
 Requires: dnf >= 1.0.2
-Requires: python3-dnf >= 1.0.2
-Requires: dnf-conf >= 1.0.2
-Requires: python-dnf >= 1.0.2
 Requires: dnf-plugins-core
-Requires: python-dnf-plugins-core
-Requires: dnf-yum >= 1.0.2
 Source0: onerpm-%{version}.tar.gz
 BuildArch: noarch
 Summary: onerpm is a single offline installer for Fedora
