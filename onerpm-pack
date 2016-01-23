@@ -150,9 +150,10 @@ setup ()
 
 proses_download ()
 {
+  local paket="$1-f$distro-*.onerpm"
   mkdir -p $temp
   rpm --root=$packroot -q $1 &> /dev/null
-  if [ $? -ne 0 ]; then
+  if [ $? -ne 0 -a ! -e $paket ]; then
     cd $temp
     dnf --installroot=$packroot --releasever=$distro --setopt keepcache=1 download --resolve $1
     if [ $? -ne 0 ]; then
@@ -173,7 +174,7 @@ proses_download ()
 proses_paket ()
 {
   if [ $skip = false ]; then
-    paket="$1-f$distro-$arch.onerpm"
+    local paket="$1-f$distro-$arch.onerpm"
     echo "memaketkan $1 ke .onerpm ..."
     info1="$1.$arch"
     info2="$1.noarch"
