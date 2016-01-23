@@ -154,7 +154,7 @@ proses_download ()
   rpm --root=$packroot -q $1 &> /dev/null
   if [ $? -ne 0 ]; then
     cd $temp
-    dnf --installroot=$packroot --releasever=$distro download --resolve $1
+    dnf --installroot=$packroot --releasever=$distro --setopt keepcache=1 download --resolve $1
     if [ $? -ne 0 ]; then
       echo "proses download gagal"
       rm -rf $temp
