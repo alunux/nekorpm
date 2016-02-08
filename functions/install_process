@@ -1,0 +1,84 @@
+#!/bin/bash
+
+# uncomment this if you don't import "cleanup" in the main program
+# . cleanup
+
+# uncomment this if you don't import "check_package_corrupt" in the main program
+# . check_package_corrupt
+
+extract_package_all ()
+{
+  if [[ "$1" = "ok" && "$3" = "ok" ]]; then
+    echo "Sedang melakukan pengekstrakan paket onerpm";
+    rm -rf $temp_repo;
+    mkdir $temp_repo;
+    cp $2 $temp_repo/paket_onerpm;
+    cd $temp_repo;
+    tar -xzf $temp_repo/paket_onerpm;
+    echo -e "Pengekstrakan selesai\n";
+  fi
+}
+
+ask_install_process_again ()
+{
+  while true; do
+    local back
+    read -p "Cari onerpm lain? [Y/n]: " back
+    case "$back" in
+      [Yy]|"" )
+        $1
+        break
+        ;;
+      [Nn] )
+        clear
+        break
+        ;;
+    esac
+  done
+}
+
+install_process ()
+{
+  while true; do
+  local next
+  read -e -p "Lanjutkan instalasi? [Y/n]: " next
+  case "$next" in
+    [Yy]|"" )
+      local aplikasi=`grep -w Name $temp_repo/keterangan | awk '{ print $3 }'`
+      sudo dnf --allowerasing --disablerepo=\* \
+               --repofrompath $aplikasi,$temp_repo --enablerepo=$aplikasi \
+               -y install $aplikasi \
+               /
+      if [ $? -ne 0 ]; then
+        echo -e "\nTerjadi kesalahan, proses instalasi dibatalkan.\n";
+      else
+        echo -e "Apikasi $aplikasi telah terinstall, selamat!\n";
+      fi
+      sleep 0.5
+      break
+      ;;
+    [Nn] )
+      echo -e "\nInstalasi dibatalkan\n"
+      break
+      ;;
+    esac
+  done
+}
+
+install_confirm ()
+{
+  local confirm
+  read -p "Install aplikasi ke sistem? [Y/n]: " confirm
+  case "$confirm" in
+    [Yy]|"" )
+      eval "$1='ok'"
+      ;;
+    [Nn] )
+      clear
+      main # change "main" with your main program/function
+      ;;
+    * )
+      install_dialog
+      ;;
+  esac
+}

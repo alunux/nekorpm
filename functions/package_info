@@ -1,0 +1,19 @@
+#!/bin/bash
+
+print_package_info ()
+{
+  echo "-----------------------"
+  echo "- Keterangan Aplikasi -"
+  printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+  cat $temp_repo/keterangan
+  printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+}
+
+extract_package_info ()
+{
+  if [ "$2" = "ok" ]; then
+    mkdir -p $temp_repo
+    tar -xzf $1 -C $temp_repo "keterangan"
+  fi
+}
+

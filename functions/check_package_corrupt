@@ -1,0 +1,20 @@
+#!/bin/bash
+
+package_corrupt_status ()
+{
+  if [ ! `tar -tzf $2 | grep -w "keterangan" | wc -l` -eq 0 ]; then
+    if [ ! `tar -tzf $2 | grep "\.rpm$" | wc -l` -eq 0 ]; then
+      eval "$1='ok'"
+    else
+      echo -e "File .rpm tidak ditemukan dalam paket onerpm Anda." \
+              "\nPastikan:\n - paket onerpm Anda tidak korup\n - " \
+              "unduhlah paket onerpm dari sumber terpercaya\n"
+      eval "$1='no'"
+    fi
+  else
+    echo -e "Tidak dapat membaca file Keterangan\nFile tidak ditemukan\n" \
+            "Pastikan:\n - paket onerpm Anda tidak korup\n - unduhlah" \
+            "paket onerpm dari sumber terpercaya\n"
+    eval "$1='no'"
+  fi
+}

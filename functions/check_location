@@ -1,0 +1,63 @@
+#!/bin/bash
+
+package_path_info ()
+{
+  local package_location
+  local search
+  local search_again
+  while true; do
+    if [ "$(rpm -q --qf %{NAME} zenity)" = "zenity" ]; then
+      package_location=`zenity --file-selection --title="Pilih Paket ONERPM"`
+    elif [ "$(rpm -q --qf %{NAME} kdialog)" = "kdialog" ]; then
+      package_location=`kdialog --getopenfilename "$HOME" --title "Pilih Paket ONERPM"`
+    else
+      read -e -p "Lokasi paket onerpm [TAB untuk autocomplete]: " -i "/" package_location
+    fi
+    if [ -e $package_location ]; then
+      if [ "${package_location: -7}" = ".onerpm" ]; then
+        echo -e "\nPaket onerpm ditemukan!\n";
+    	  eval "$1=$package_location"
+    	  break
+      else
+        if [[ "$package_location" == "" ]]; then
+          echo -e "\nAnda belum memilih paket ONERPM\n"
+        else
+          echo -e "\nBukan paket onerpm\n";
+        fi
+        eval "$1=''"
+        search=true;
+        while $search; do
+          read -p "Lanjutkan pensearchan? [Y/n]: " search_again
+          case "$search_again" in
+            [Yy]|"" )
+              break
+              ;;
+            [Nn] )
+              clear
+              search=false
+              ;;
+          esac
+        done
+      fi
+    else
+      echo -e "\nLokasi tidak tersedia\n";
+      search=true;
+      while $search; do
+        read -p "Lanjutkan pensearchan? [Y/n]: " search_again
+        case "$search_again" in
+          [Yy]|"" )
+            break
+            ;;
+          [Nn] )
+            clear
+            search=false
+            ;;
+        esac
+      done
+    fi
+    if [ "$search" = "false" ]; then
+      break;
+    fi
+  done
+}
+
