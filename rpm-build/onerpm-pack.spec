@@ -8,6 +8,7 @@ BuildRoot: %{_tmppath}/%{name}-root
 Requires: bash >= 4.0
 Requires: dnf >= 1.0.2
 Requires: dnf-plugins-core
+Requires: onerpm
 Source0: onerpm-pack-%{version}.tar.gz
 BuildArch: noarch
 Summary: onerpm-pack is a packager for .onerpm package
