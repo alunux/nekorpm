@@ -25,7 +25,6 @@ temp_repo="/tmp/onerpm"
 . /usr/share/onerpm/functions/check_location
 . /usr/share/onerpm/functions/package_info
 . /usr/share/onerpm/functions/install_process
-. /usr/share/onerpm/functions/install_dialog
 
 see_package_info ()
 {
