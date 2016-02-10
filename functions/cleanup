@@ -4,5 +4,10 @@
 
 rm_temp ()
 {
-  rm -rf $temp_repo
+  local name="$(basename "$0")"
+  if [[ "$name" = "onerpm" ]]; then
+    rm -rf $temp_repo
+  elif [[ "$name" = "onerpm-pack" ]]; then
+    sudo rm -rf $packroot
+  fi
 }
