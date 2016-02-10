@@ -19,7 +19,7 @@ package_path_info ()
     	  eval "$1=$package_location"
     	  break
       else
-        if [[ "$package_location" == "" ]]; then
+        if [[ "$package_location" = "" ]]; then
           echo -e "\nAnda belum memilih paket ONERPM\n"
         else
           echo -e "\nBukan paket onerpm\n";
