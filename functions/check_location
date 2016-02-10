@@ -7,9 +7,9 @@ package_path_info ()
   local search_again
   while true; do
     if [ "$(rpm -q --qf %{NAME} zenity)" = "zenity" ]; then
-      package_location=`zenity --file-selection --title="Pilih Paket ONERPM"`
+      package_location=`zenity --file-selection --title="Pilih Paket ONERPM" 2>/dev/null`
     elif [ "$(rpm -q --qf %{NAME} kdialog)" = "kdialog" ]; then
-      package_location=`kdialog --getopenfilename "$HOME" --title "Pilih Paket ONERPM"`
+      package_location=`kdialog --getopenfilename "$HOME" --title "Pilih Paket ONERPM" 2>/dev/null`
     else
       read -e -p "Lokasi paket onerpm [TAB untuk autocomplete]: " -i "/" package_location
     fi
