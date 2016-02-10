@@ -27,7 +27,7 @@ package_path_info ()
         eval "$1=''"
         search=true;
         while $search; do
-          read -p "Lanjutkan pensearchan? [Y/n]: " search_again
+          read -p "Lanjutkan pencarian? [Y/n]: " search_again
           case "$search_again" in
             [Yy]|"" )
               break
@@ -43,7 +43,7 @@ package_path_info ()
       echo -e "\nLokasi tidak tersedia\n";
       search=true;
       while $search; do
-        read -p "Lanjutkan pensearchan? [Y/n]: " search_again
+        read -p "Lanjutkan pencarian? [Y/n]: " search_again
         case "$search_again" in
           [Yy]|"" )
             break
