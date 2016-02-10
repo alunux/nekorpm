@@ -26,9 +26,9 @@ lokasi ()
 {
   while true; do
     if [ "$(rpm -q --qf %{NAME} zenity)" = "zenity" ]; then
-      lokasi_paket=`zenity --file-selection --title="Pilih Paket ONERPM"`
+      lokasi_paket=`zenity --file-selection --title="Pilih Paket ONERPM" 2>/dev/null`
     elif [ "$(rpm -q --qf %{NAME} kdialog)" = "kdialog" ]; then
-      lokasi_paket=`kdialog --getopenfilename "$HOME" --title "Pilih Paket ONERPM"`
+      lokasi_paket=`kdialog --getopenfilename "$HOME" --title "Pilih Paket ONERPM" 2>/dev/null`
     else
       read -e -p "Lokasi paket onerpm [TAB untuk autocomplete]: " -i "/" lokasi_paket
     fi
@@ -58,7 +58,6 @@ lokasi ()
               break
               ;;
             [Nn] )
-              clear
               cari=false
               ;;
           esac
@@ -231,6 +230,9 @@ elif [[ $# -ge 2 && ("$1" = "--arch=32" || `uname -m` = "i686") ]]; then
       case "$lanjut" in
         [Yy]|"" )
           lokasi 32
+          if [[ "$cari" = "false" ]]; then
+            setup 32
+          fi
           ;;
         [Nn] )
           setup 32
@@ -253,6 +255,9 @@ elif [[ (! "$1" = "--arch=32") && `uname -m` = "x86_64" ]]; then
       case "$lanjut" in
         [Yy]|"" )
           lokasi 64
+          if [[ "$cari" = "false" ]]; then
+            setup 64
+          fi
           ;;
         [Nn] )
           setup 64
@@ -260,6 +265,30 @@ elif [[ (! "$1" = "--arch=32") && `uname -m` = "x86_64" ]]; then
       esac
   fi
   utama $@
+elif [[ "$1" = "--arch=32" || `uname -m` = "i686" ]]; then
+  arch="i686"
+  packroot="$HOME/.onerpm/$distro-32"
+  if [[ ! -d "$HOME/.onerpm/$distro-32" ]]; then
+    echo -e "Apakah Anda mempunyai backup root sebelumnya?"
+      read -p "Lanjutkan? [Y/n]: " lanjut
+      case "$lanjut" in
+        [Yy]|"" )
+          lokasi 32
+          if [[ "$cari" = "false" ]]; then
+            setup 32
+          fi
+          ;;
+        [Nn] )
+          setup 32
+          ;;
+      esac
+  fi
+  if [[ ! "$1" = "--arch=32" ]];  then
+    utama $@
+  else
+    shift 1
+    utama $@
+  fi
 else
   arch="x86_64"
   shift 1
