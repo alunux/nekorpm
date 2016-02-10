@@ -15,75 +15,15 @@
 #
 #   Copyright (C) La Ode Muh. Fadlun Akbar
 
+# import function here
+. functions/cleanup
+. functions/check_location
+
 distro="$(rpm -E %{?fedora})"
 temp="/tmp/onerpm-pack/"
 tempBuild="/tmp/onerpm-root"
+backup_location=''
 skip=false;
-daftar_paket_64=`cat /usr/share/onerpm-pack/f23-mini-x86-64`
-daftar_paket_32=`cat /usr/share/onerpm-pack/f23-mini-x86`
-
-lokasi ()
-{
-  while true; do
-    if [ "$(rpm -q --qf %{NAME} zenity)" = "zenity" ]; then
-      lokasi_paket=`zenity --file-selection --title="Pilih Paket ONERPM" 2>/dev/null`
-    elif [ "$(rpm -q --qf %{NAME} kdialog)" = "kdialog" ]; then
-      lokasi_paket=`kdialog --getopenfilename "$HOME" --title "Pilih Paket ONERPM" 2>/dev/null`
-    else
-      read -e -p "Lokasi paket onerpm [TAB untuk autocomplete]: " -i "/" lokasi_paket
-    fi
-    if [ -e $lokasi_paket ]; then
-      if [ "${lokasi_paket: -7}" = ".onerpm" ]; then
-        echo -e "\nPaket onerpm ditemukan!\n";
-        case "$1" in
-          32)
-            setup 32 $lokasi_paket
-            ;;
-          64)
-            setup 64 $lokasi_paket
-            ;;
-        esac
-        break;
-      else
-        if [[ "$lokasi_paket" == "" ]]; then
-          echo -e "\nAnda belum memilih paket ONERPM\n"
-        else
-          echo -e "\nBukan paket onerpm\n";
-        fi
-        cari=true;
-        while $cari; do
-          read -p "Lanjutkan pencarian? [Y/n]: " lanjut_cari
-          case "$lanjut_cari" in
-            [Yy]|"" )
-              break
-              ;;
-            [Nn] )
-              cari=false
-              ;;
-          esac
-        done
-      fi
-    else
-      echo -e "\nLokasi tidak tersedia\n";
-      cari=true;
-      while $cari; do
-        read -p "Lanjutkan pencarian? [Y/n]: " lanjut_cari
-        case "$lanjut_cari" in
-          [Yy]|"" )
-            break
-            ;;
-          [Nn] )
-            clear
-            cari=false
-            ;;
-        esac
-      done
-    fi
-    if [ "$cari" = "false" ]; then
-      break;
-    fi
-  done
-}
 
 setup ()
 {
@@ -229,7 +169,8 @@ elif [[ $# -ge 2 && ("$1" = "--arch=32" || `uname -m` = "i686") ]]; then
       read -p "Lanjutkan? [Y/n]: " lanjut
       case "$lanjut" in
         [Yy]|"" )
-          lokasi 32
+          package_path_info backup_location
+          setup 32 $backup_location
           if [[ "$cari" = "false" ]]; then
             setup 32
           fi
@@ -254,7 +195,8 @@ elif [[ (! "$1" = "--arch=32") && `uname -m` = "x86_64" ]]; then
       read -p "Lanjutkan? [Y/n]: " lanjut
       case "$lanjut" in
         [Yy]|"" )
-          lokasi 64
+          package_path_info backup_location
+          setup 64 $backup_location
           if [[ "$cari" = "false" ]]; then
             setup 64
           fi
@@ -273,7 +215,8 @@ elif [[ "$1" = "--arch=32" || `uname -m` = "i686" ]]; then
       read -p "Lanjutkan? [Y/n]: " lanjut
       case "$lanjut" in
         [Yy]|"" )
-          lokasi 32
+          package_path_info backup_location
+          setup 32 $backup_location
           if [[ "$cari" = "false" ]]; then
             setup 32
           fi
