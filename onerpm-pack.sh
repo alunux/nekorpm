@@ -1,0 +1,241 @@
+#!/bin/bash
+
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+#   Copyright (C) La Ode Muh. Fadlun Akbar
+
+# import function here
+. functions/cleanup
+. functions/check_location
+
+distro="$(rpm -E %{?fedora})"
+temp="/tmp/onerpm-pack/"
+tempBuild="/tmp/onerpm-root"
+backup_location=''
+skip=false;
+
+setup ()
+{
+  echo -e "-------------------------------------------------------------" \
+          "\n- Anda akan membuat membuat lingkungan root untuk Fedora $distro -" \
+          "\n-    Hal ini diperlukan agar onerpm-pack dapat melakukan    -" \
+          "\n-      penyelesaian dependensi dan pemaketan aplikasi       -" \
+          "\n-                 dengan arsitektur $1-bit                  -" \
+          "\n-------------------------------------------------------------"
+  read -p "Lanjutkan? [Y/n]: " lanjut
+  case "$lanjut" in
+    [Yy]|"" )
+      sudo rm -rf $packroot
+      mkdir $tempBuild
+      if [[ -n "$2" ]]; then
+        tar -xzf $2 -C $tempBuild
+      else
+        if [[ $1 = "32" ]]; then
+          sudo dnf --installroot=$packroot --releasever=$distro --disablerepo='*' \
+                   --enablerepo=fedora download $daftar_paket_32 --destdir=$tempBuild
+        else
+          sudo dnf --installroot=$packroot --releasever=$distro --disablerepo='*' \
+                   --enablerepo=fedora download $daftar_paket_64 --destdir=$tempBuild
+        fi
+      fi
+      if [ $? -ne 0 ]; then
+        echo -e "Terjadi kesalahan, setup dibatalkan\n"
+        sudo rm -rf $packroot
+        exit 1
+      fi
+      sudo dnf --installroot=$packroot --releasever=$distro --disablerepo='*' \
+               install $tempBuild/*.rpm -y
+      if [[ -n "$2" ]]; then
+        echo -e "\nProses setup telah selesai\n"
+      else
+        echo -e "\nProses setup telah selesai" \
+                "\nApakah Anda ingin backup paket-paket yang dibutuhkan oleh" \
+                "\nonerpm-pack saat membuat lingkungan root tadi?"
+        read -p "Lanjutkan? [Y/n]: " lanjut
+        case "$lanjut" in
+          [Yy]|"" )
+            {
+            cd $tempBuild
+            tar -czf onerpm-root-backup.onerpm *
+            mv onerpm-root-backup.onerpm $(cd -)
+            rm -rf $tempBuild
+            cd -
+            } &> /dev/null
+            echo -e "\npembuatan backup selesai"
+            ;;
+          [Nn] )
+            rm -rf $tempBuild
+            ;;
+        esac
+      fi
+      ;;
+    [Nn] )
+      rm -rf $tempBuild
+      exit 1
+      ;;
+  esac
+}
+
+proses_download ()
+{
+  local paket="$1-f$distro-*.onerpm"
+  mkdir -p $temp
+  rpm --root=$packroot -q $1 &> /dev/null
+  if [ $? -ne 0 -a ! -e $paket ]; then
+    cd $temp
+    dnf --installroot=$packroot --releasever=$distro --setopt keepcache=1 download --resolve $1
+    if [ $? -ne 0 ]; then
+      echo "proses download gagal"
+      rm -rf $temp
+      exit 1
+    fi
+    echo "proses download $1 selesai"
+    skip=false;
+  else
+    echo "paket $1 telah ada di sistem!"
+    echo "paket $1 tidak akan didownload"
+    rm -rf $temp
+    skip=true;
+  fi
+}
+
+proses_paket ()
+{
+  if [ $skip = false ]; then
+    local paket="$1-f$distro-$arch.onerpm"
+    echo "memaketkan $1 ke .onerpm ..."
+    info1="$1.$arch"
+    info2="$1.noarch"
+    dnf info $info1 &> /dev/null
+    if [ $? -ne 0 ]; then
+      dnf info $info2 > keterangan
+    else
+      dnf info $info1 > keterangan
+    fi
+    {
+    createrepo_c .
+    tar -czf $paket *
+    } &> /dev/null
+    if [ $? -ne 0 ]; then
+      echo "proses pemaketan gagal"
+      rm -rf $temp
+      exit 1
+    fi
+    mv $paket $(cd -)
+    rm -rf $temp
+    echo "pemaketan $1 selesai"
+    rm -rf $temp
+    cd - &> /dev/null
+  fi
+  printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+}
+
+utama ()
+{
+  aplikasi="$@"
+  printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+  for i in $aplikasi
+  do
+    echo -e "Pembuatan paket ONERPM untuk $i dilakukan ...\n"
+    proses_download $i
+    proses_paket $i
+  done
+}
+
+if [ $# -eq 0 ]; then
+  echo -e "Nama paket belum disebutkan, minimal sebutkan 1 paket." \
+          "\n\nPenggunaan\t: onerpm-pack app1 app2 ... appN" \
+          "\nContoh 1\t: onerpm-pack geany" \
+          "\nContoh 2\t: onerpm-pack geany texmaker gedit\n"
+  exit 1;
+elif [[ $# -ge 2 && ("$1" = "--arch=32" || `uname -m` = "i686") ]]; then
+  arch="i686"
+  if [[ `uname -m` = "x86_64" ]]; then
+    sudo sed -i 's/$basearch/i386/g' /etc/yum.repos.d/*.repo
+    packroot="$HOME/.onerpm/$distro-32"
+    if [[ ! -d "$HOME/.onerpm/$distro-32" ]]; then
+      echo -e "Apakah Anda mempunyai backup root sebelumnya?"
+      read -p "Lanjutkan? [Y/n]: " lanjut
+      case "$lanjut" in
+        [Yy]|"" )
+          package_path_info backup_location
+          setup 32 $backup_location
+          if [[ "$cari" = "false" ]]; then
+            setup 32
+          fi
+          ;;
+        [Nn] )
+          setup 32
+          ;;
+      esac
+    fi
+  fi
+  if [[ ! "$1" = "--arch=32" ]];  then
+    utama $@
+  else
+    shift 1
+    utama $@
+  fi
+elif [[ (! "$1" = "--arch=32") && `uname -m` = "x86_64" ]]; then
+  arch="x86_64"
+  packroot="$HOME/.onerpm/$distro-64"
+  if [[ ! -d "$HOME/.onerpm/$distro-64" ]]; then
+    echo -e "Apakah Anda mempunyai backup root sebelumnya?"
+      read -p "Lanjutkan? [Y/n]: " lanjut
+      case "$lanjut" in
+        [Yy]|"" )
+          package_path_info backup_location
+          setup 64 $backup_location
+          if [[ "$cari" = "false" ]]; then
+            setup 64
+          fi
+          ;;
+        [Nn] )
+          setup 64
+          ;;
+      esac
+  fi
+  utama $@
+elif [[ "$1" = "--arch=32" || `uname -m` = "i686" ]]; then
+  arch="i686"
+  packroot="$HOME/.onerpm/$distro-32"
+  if [[ ! -d "$HOME/.onerpm/$distro-32" ]]; then
+    echo -e "Apakah Anda mempunyai backup root sebelumnya?"
+      read -p "Lanjutkan? [Y/n]: " lanjut
+      case "$lanjut" in
+        [Yy]|"" )
+          package_path_info backup_location
+          setup 32 $backup_location
+          if [[ "$cari" = "false" ]]; then
+            setup 32
+          fi
+          ;;
+        [Nn] )
+          setup 32
+          ;;
+      esac
+  fi
+  if [[ ! "$1" = "--arch=32" ]];  then
+    utama $@
+  else
+    shift 1
+    utama $@
+  fi
+else
+  arch="x86_64"
+  shift 1
+  utama $@
+fi
+
+sudo sed -i 's/i386/$basearch/g' /etc/yum.repos.d/*.repo
