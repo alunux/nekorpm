@@ -1,0 +1,32 @@
+#!/bin/bash
+
+packaging ()
+{
+  if [ $1 = false ]; then
+    local paket="$2-f$3-$arch.nekorpm"
+    echo "memaketkan $2 ke .nekorpm ..."
+    info1="$2.$arch"
+    info2="$2.noarch"
+    dnf info $info1 &> /dev/null
+    if [ $? -ne 0 ]; then
+      dnf info $info2 > keterangan
+    else
+      dnf info $info1 > keterangan
+    fi
+    {
+    createrepo_c .
+    tar -czf $paket *
+    } &> /dev/null
+    if [ $? -ne 0 ]; then
+      echo "proses pemaketan gagal"
+      rm -rf $temp
+      exit 1
+    fi
+    mv $paket $(cd -)
+    rm -rf $temp
+    echo "pemaketan $2 selesai"
+    rm -rf $temp
+    cd - &> /dev/null
+  fi
+  printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+}

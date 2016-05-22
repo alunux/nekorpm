@@ -5,9 +5,9 @@
 rm_temp ()
 {
   local name="$(basename "$0")"
-  if [[ "$name" = "onerpm" ]]; then
+  if [[ "$name" = "nekorpm" ]]; then
     rm -rf $temp_repo
-  elif [[ "$name" = "onerpm-pack" ]]; then
-    sudo rm -rf $packroot
+  elif [[ "$name" = "nekorpm-pack" ]]; then
+    sudo rm -rf $temp
   fi
 }

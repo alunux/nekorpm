@@ -1,0 +1,24 @@
+#!/bin/bash
+
+download_package ()
+{
+  local paket="$2-f$distro-*.nekorpm"
+  mkdir -p $temp
+  rpm --root=$3 -q $2 &> /dev/null
+  if [ $? -ne 0 -a ! -e $paket ]; then
+    cd $temp
+    dnf --installroot=$3 --releasever=$4 --setopt keepcache=1 download --resolve $2
+    if [ $? -ne 0 ]; then
+      echo "proses download gagal"
+      rm -rf $temp
+      exit 1
+    fi
+    echo "proses download $2 selesai"
+    eval "$1=false"
+  else
+    echo "paket $2 telah ada di sistem!"
+    echo "paket $2 tidak akan didownload"
+    rm -rf $temp
+    eval "$1=true"
+  fi
+}

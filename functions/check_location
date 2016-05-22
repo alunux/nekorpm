@@ -7,22 +7,22 @@ package_path_info ()
   local search_again
   while true; do
     if [ "$(rpm -q --qf %{NAME} zenity)" = "zenity" ]; then
-      package_location=`zenity --file-selection --title="Pilih Paket ONERPM" 2>/dev/null`
+      package_location=`zenity --file-selection --title="Pilih Paket nekorpm" 2>/dev/null`
     elif [ "$(rpm -q --qf %{NAME} kdialog)" = "kdialog" ]; then
-      package_location=`kdialog --getopenfilename "$HOME" --title "Pilih Paket ONERPM" 2>/dev/null`
+      package_location=`kdialog --getopenfilename "$HOME" --title "Pilih Paket nekorpm" 2>/dev/null`
     else
-      read -e -p "Lokasi paket onerpm [TAB untuk autocomplete]: " -i "/" package_location
+      read -e -p "Lokasi paket nekorpm [TAB untuk autocomplete]: " -i "/" package_location
     fi
-    if [ -e $package_location ]; then
-      if [ "${package_location: -7}" = ".onerpm" ]; then
-        echo -e "\nPaket onerpm ditemukan!\n";
-    	  eval "$1=$package_location"
+    if [ -e "$package_location" ]; then
+      if [ "${package_location: -8}" = ".nekorpm" ]; then
+        echo -e "\nPaket nekorpm ditemukan!\n";
+    	  eval "$1='$package_location'"
     	  break
       else
         if [[ "$package_location" = "" ]]; then
-          echo -e "\nAnda belum memilih paket ONERPM\n"
+          echo -e "\nAnda belum memilih paket nekorpm\n"
         else
-          echo -e "\nBukan paket onerpm\n";
+          echo -e "\nBukan paket nekorpm\n";
         fi
         eval "$1=''"
         search=true;
@@ -60,4 +60,3 @@ package_path_info ()
     fi
   done
 }
-

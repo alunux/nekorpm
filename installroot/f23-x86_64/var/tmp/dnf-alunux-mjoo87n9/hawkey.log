@@ -1,0 +1,1082 @@
+INFO May-22 08:42:55 Started hawkey-0.6.2.
+INFO May-22 08:42:55 Architecture is: x86_64
+INFO May-22 08:42:55 fetching rpmdb
+INFO May-22 08:42:56 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:43:15 using cached dyskette-gnome-320-x86_64 (0xec0f3f16b51c15760ae5829846ea5cdb8536e394282463bee87810c15fa1699a)
+INFO May-22 08:43:15 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-x86_64-filenames.solvx
+ERROR May-22 08:43:15 load_ext(): no 2 string for dyskette-gnome-320-x86_64
+INFO May-22 08:43:15 no presto metadata available for dyskette-gnome-320-x86_64
+ERROR May-22 08:43:15 load_ext(): no 5 string for dyskette-gnome-320-x86_64
+INFO May-22 08:43:15 no updateinfo available for dyskette-gnome-320-x86_64
+INFO May-22 08:43:20 fetching nodesource
+INFO May-22 08:43:20 caching repo: nodesource (0x15a9741fcaef5e6bccf8f8d0c0c1276ec54c9729d7bb877707c7b4c865259285)
+INFO May-22 08:43:20 load_ext: loading: /var/tmp/dnf-alunux-mjoo87n9/nodesource-b762ca03eb91337e/repodata/915bcf8dd42b9692887e04fb0a0fae2296b8bae6-filelists.xml.gz
+INFO May-22 08:43:20 write_ext: storing nodesource to: /var/tmp/dnf-alunux-mjoo87n9/nodesource-filenames.solvx.ZTffWd
+ERROR May-22 08:43:20 load_ext(): no 2 string for nodesource
+INFO May-22 08:43:20 no presto metadata available for nodesource
+ERROR May-22 08:43:20 load_ext(): no 5 string for nodesource
+INFO May-22 08:43:20 no updateinfo available for nodesource
+INFO May-22 08:44:57 Started hawkey-0.6.2.
+INFO May-22 08:44:57 Architecture is: x86_64
+INFO May-22 08:44:57 fetching rpmdb
+INFO May-22 08:44:57 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:44:57 using cached dyskette-gnome-320-x86_64 (0xec0f3f16b51c15760ae5829846ea5cdb8536e394282463bee87810c15fa1699a)
+INFO May-22 08:44:57 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-x86_64-filenames.solvx
+ERROR May-22 08:44:57 load_ext(): no 2 string for dyskette-gnome-320-x86_64
+INFO May-22 08:44:57 no presto metadata available for dyskette-gnome-320-x86_64
+ERROR May-22 08:44:57 load_ext(): no 5 string for dyskette-gnome-320-x86_64
+INFO May-22 08:44:57 no updateinfo available for dyskette-gnome-320-x86_64
+INFO May-22 08:45:50 using cached dyskette-gnome-320-i386 (0xfdf6038533daf21f5c63e72b5d5595f42afb885c765457097d67dad5c6043e02)
+INFO May-22 08:45:50 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-i386-filenames.solvx
+ERROR May-22 08:45:50 load_ext(): no 2 string for dyskette-gnome-320-i386
+INFO May-22 08:45:50 no presto metadata available for dyskette-gnome-320-i386
+ERROR May-22 08:45:50 load_ext(): no 5 string for dyskette-gnome-320-i386
+INFO May-22 08:45:50 no updateinfo available for dyskette-gnome-320-i386
+INFO May-22 08:46:01 using cached nodesource (0x15a9741fcaef5e6bccf8f8d0c0c1276ec54c9729d7bb877707c7b4c865259285)
+INFO May-22 08:46:01 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/nodesource-filenames.solvx
+ERROR May-22 08:46:01 load_ext(): no 2 string for nodesource
+INFO May-22 08:46:01 no presto metadata available for nodesource
+ERROR May-22 08:46:01 load_ext(): no 5 string for nodesource
+INFO May-22 08:46:01 no updateinfo available for nodesource
+INFO May-22 08:46:16 Started hawkey-0.6.2.
+INFO May-22 08:46:16 Architecture is: x86_64
+INFO May-22 08:46:16 fetching rpmdb
+INFO May-22 08:46:16 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:46:24 Started hawkey-0.6.2.
+INFO May-22 08:46:24 Architecture is: x86_64
+INFO May-22 08:46:24 fetching rpmdb
+INFO May-22 08:46:24 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:46:28 using cached home_Horst3180 (0x45f2d30e89ca3a850b96a0b29c6e9ea31fe0064059968eb40189caee8e8624a7)
+INFO May-22 08:46:28 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/home_Horst3180-filenames.solvx
+ERROR May-22 08:46:28 load_ext(): no 2 string for home_Horst3180
+INFO May-22 08:46:28 no presto metadata available for home_Horst3180
+ERROR May-22 08:46:28 load_ext(): no 5 string for home_Horst3180
+INFO May-22 08:46:28 no updateinfo available for home_Horst3180
+INFO May-22 08:46:31 using cached dyskette-gnome-320-x86_64 (0xec0f3f16b51c15760ae5829846ea5cdb8536e394282463bee87810c15fa1699a)
+INFO May-22 08:46:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-x86_64-filenames.solvx
+ERROR May-22 08:46:31 load_ext(): no 2 string for dyskette-gnome-320-x86_64
+INFO May-22 08:46:31 no presto metadata available for dyskette-gnome-320-x86_64
+ERROR May-22 08:46:31 load_ext(): no 5 string for dyskette-gnome-320-x86_64
+INFO May-22 08:46:31 no updateinfo available for dyskette-gnome-320-x86_64
+INFO May-22 08:46:38 using cached dyskette-gnome-320-i386 (0xfdf6038533daf21f5c63e72b5d5595f42afb885c765457097d67dad5c6043e02)
+INFO May-22 08:46:38 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-i386-filenames.solvx
+ERROR May-22 08:46:38 load_ext(): no 2 string for dyskette-gnome-320-i386
+INFO May-22 08:46:38 no presto metadata available for dyskette-gnome-320-i386
+ERROR May-22 08:46:38 load_ext(): no 5 string for dyskette-gnome-320-i386
+INFO May-22 08:46:38 no updateinfo available for dyskette-gnome-320-i386
+INFO May-22 08:46:57 Started hawkey-0.6.2.
+INFO May-22 08:46:57 Architecture is: x86_64
+INFO May-22 08:46:57 fetching rpmdb
+INFO May-22 08:46:57 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:47:37 Started hawkey-0.6.2.
+INFO May-22 08:47:37 Architecture is: x86_64
+INFO May-22 08:47:37 fetching rpmdb
+INFO May-22 08:47:37 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:47:37 using cached nodesource (0x15a9741fcaef5e6bccf8f8d0c0c1276ec54c9729d7bb877707c7b4c865259285)
+INFO May-22 08:47:37 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/nodesource-filenames.solvx
+ERROR May-22 08:47:37 load_ext(): no 2 string for nodesource
+INFO May-22 08:47:37 no presto metadata available for nodesource
+ERROR May-22 08:47:37 load_ext(): no 5 string for nodesource
+INFO May-22 08:47:37 no updateinfo available for nodesource
+INFO May-22 08:47:44 using cached dyskette-gnome-320-x86_64 (0xec0f3f16b51c15760ae5829846ea5cdb8536e394282463bee87810c15fa1699a)
+INFO May-22 08:47:44 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-x86_64-filenames.solvx
+ERROR May-22 08:47:44 load_ext(): no 2 string for dyskette-gnome-320-x86_64
+INFO May-22 08:47:44 no presto metadata available for dyskette-gnome-320-x86_64
+ERROR May-22 08:47:44 load_ext(): no 5 string for dyskette-gnome-320-x86_64
+INFO May-22 08:47:44 no updateinfo available for dyskette-gnome-320-x86_64
+INFO May-22 08:50:00 Started hawkey-0.6.2.
+INFO May-22 08:50:00 Architecture is: x86_64
+INFO May-22 08:50:00 fetching rpmdb
+INFO May-22 08:50:00 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:50:00 using cached dyskette-gnome-320-i386 (0xfdf6038533daf21f5c63e72b5d5595f42afb885c765457097d67dad5c6043e02)
+INFO May-22 08:50:00 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-i386-filenames.solvx
+ERROR May-22 08:50:00 load_ext(): no 2 string for dyskette-gnome-320-i386
+INFO May-22 08:50:00 no presto metadata available for dyskette-gnome-320-i386
+ERROR May-22 08:50:00 load_ext(): no 5 string for dyskette-gnome-320-i386
+INFO May-22 08:50:00 no updateinfo available for dyskette-gnome-320-i386
+INFO May-22 08:51:30 Started hawkey-0.6.2.
+INFO May-22 08:51:30 Architecture is: x86_64
+INFO May-22 08:51:30 fetching rpmdb
+INFO May-22 08:51:30 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:51:44 Started hawkey-0.6.2.
+INFO May-22 08:51:44 Architecture is: x86_64
+INFO May-22 08:51:44 fetching rpmdb
+INFO May-22 08:51:44 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:51:48 using cached dyskette-gnome-320-i386 (0xfdf6038533daf21f5c63e72b5d5595f42afb885c765457097d67dad5c6043e02)
+INFO May-22 08:51:48 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-i386-filenames.solvx
+ERROR May-22 08:51:48 load_ext(): no 2 string for dyskette-gnome-320-i386
+INFO May-22 08:51:48 no presto metadata available for dyskette-gnome-320-i386
+ERROR May-22 08:51:48 load_ext(): no 5 string for dyskette-gnome-320-i386
+INFO May-22 08:51:48 no updateinfo available for dyskette-gnome-320-i386
+INFO May-22 08:52:48 Started hawkey-0.6.2.
+INFO May-22 08:52:48 Architecture is: x86_64
+INFO May-22 08:52:48 fetching rpmdb
+INFO May-22 08:52:48 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:52:50 using cached nodesource (0x15a9741fcaef5e6bccf8f8d0c0c1276ec54c9729d7bb877707c7b4c865259285)
+INFO May-22 08:52:50 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/nodesource-filenames.solvx
+ERROR May-22 08:52:50 load_ext(): no 2 string for nodesource
+INFO May-22 08:52:50 no presto metadata available for nodesource
+ERROR May-22 08:52:50 load_ext(): no 5 string for nodesource
+INFO May-22 08:52:50 no updateinfo available for nodesource
+INFO May-22 08:52:57 Started hawkey-0.6.2.
+INFO May-22 08:52:57 Architecture is: x86_64
+INFO May-22 08:52:57 fetching rpmdb
+INFO May-22 08:52:57 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:52:57 using cached dyskette-gnome-320-x86_64 (0xec0f3f16b51c15760ae5829846ea5cdb8536e394282463bee87810c15fa1699a)
+INFO May-22 08:52:57 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-x86_64-filenames.solvx
+ERROR May-22 08:52:57 load_ext(): no 2 string for dyskette-gnome-320-x86_64
+INFO May-22 08:52:57 no presto metadata available for dyskette-gnome-320-x86_64
+ERROR May-22 08:52:57 load_ext(): no 5 string for dyskette-gnome-320-x86_64
+INFO May-22 08:52:57 no updateinfo available for dyskette-gnome-320-x86_64
+INFO May-22 08:53:46 Started hawkey-0.6.2.
+INFO May-22 08:53:46 Architecture is: x86_64
+INFO May-22 08:53:46 fetching rpmdb
+INFO May-22 08:53:46 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:55:04 Started hawkey-0.6.2.
+INFO May-22 08:55:04 Architecture is: x86_64
+INFO May-22 08:55:04 fetching rpmdb
+INFO May-22 08:55:04 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:55:04 using cached nodesource (0x15a9741fcaef5e6bccf8f8d0c0c1276ec54c9729d7bb877707c7b4c865259285)
+INFO May-22 08:55:04 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/nodesource-filenames.solvx
+ERROR May-22 08:55:04 load_ext(): no 2 string for nodesource
+INFO May-22 08:55:04 no presto metadata available for nodesource
+ERROR May-22 08:55:04 load_ext(): no 5 string for nodesource
+INFO May-22 08:55:04 no updateinfo available for nodesource
+INFO May-22 08:55:09 using cached infinality-ultimate (0x62587a33219dbcaf6b420402ff453a6c8b545ce6c725ba92fa5510b30a267a41)
+INFO May-22 08:55:09 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-filenames.solvx
+ERROR May-22 08:55:09 load_ext(): no 2 string for infinality-ultimate
+INFO May-22 08:55:09 no presto metadata available for infinality-ultimate
+ERROR May-22 08:55:09 load_ext(): no 5 string for infinality-ultimate
+INFO May-22 08:55:09 no updateinfo available for infinality-ultimate
+INFO May-22 08:55:14 using cached rpmfusion-nonfree (0x08ff6c0e10e7c645a53f7c9cc455d2327b6ba3ec88816fdbf07cbb884f795093)
+INFO May-22 08:55:14 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-filenames.solvx
+ERROR May-22 08:55:14 load_ext(): no 2 string for rpmfusion-nonfree
+INFO May-22 08:55:14 no presto metadata available for rpmfusion-nonfree
+ERROR May-22 08:55:14 load_ext(): no 5 string for rpmfusion-nonfree
+INFO May-22 08:55:14 no updateinfo available for rpmfusion-nonfree
+INFO May-22 08:55:18 using cached churchyard-chromium-russianfedora (0xae8f5c1a3ad48216cdb9f625793e95f526ddf1d722c5684e1a82b4915f5abe72)
+INFO May-22 08:55:18 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/churchyard-chromium-russianfedora-filenames.solvx
+ERROR May-22 08:55:18 load_ext(): no 2 string for churchyard-chromium-russianfedora
+INFO May-22 08:55:18 no presto metadata available for churchyard-chromium-russianfedora
+ERROR May-22 08:55:18 load_ext(): no 5 string for churchyard-chromium-russianfedora
+INFO May-22 08:55:18 no updateinfo available for churchyard-chromium-russianfedora
+INFO May-22 08:55:20 using cached fedora (0x0c2ba40111c8817b2aff89b0487d6aeac87c38083b39ce3ba017e644449d7ade)
+INFO May-22 08:55:20 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/fedora-filenames.solvx
+ERROR May-22 08:55:20 load_ext(): no 2 string for fedora
+INFO May-22 08:55:20 no presto metadata available for fedora
+ERROR May-22 08:55:20 load_ext(): no 5 string for fedora
+INFO May-22 08:55:20 no updateinfo available for fedora
+INFO May-22 08:55:23 using cached rommon-telegram (0x93f1ac1197c3dba24d980298570ba679f0011a5d05067d6e8d9b5cfe6f0fab70)
+INFO May-22 08:55:23 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rommon-telegram-filenames.solvx
+ERROR May-22 08:55:23 load_ext(): no 2 string for rommon-telegram
+INFO May-22 08:55:23 no presto metadata available for rommon-telegram
+ERROR May-22 08:55:23 load_ext(): no 5 string for rommon-telegram
+INFO May-22 08:55:23 no updateinfo available for rommon-telegram
+INFO May-22 08:55:40 using cached insync (0xd9dd9cf79073d5245994d00c2571d553af5b8f60c0831bd139b23cf67d5bb6af)
+INFO May-22 08:55:40 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/insync-filenames.solvx
+ERROR May-22 08:55:40 load_ext(): no 2 string for insync
+INFO May-22 08:55:40 no presto metadata available for insync
+ERROR May-22 08:55:40 load_ext(): no 5 string for insync
+INFO May-22 08:55:40 no updateinfo available for insync
+INFO May-22 08:56:11 Started hawkey-0.6.2.
+INFO May-22 08:56:11 Architecture is: x86_64
+INFO May-22 08:56:11 fetching rpmdb
+INFO May-22 08:56:11 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:56:11 using cached insync (0xd9dd9cf79073d5245994d00c2571d553af5b8f60c0831bd139b23cf67d5bb6af)
+INFO May-22 08:56:11 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/insync-filenames.solvx
+ERROR May-22 08:56:11 load_ext(): no 2 string for insync
+INFO May-22 08:56:11 no presto metadata available for insync
+ERROR May-22 08:56:11 load_ext(): no 5 string for insync
+INFO May-22 08:56:11 no updateinfo available for insync
+INFO May-22 08:56:11 using cached dyskette-gnome-320-i386 (0xfdf6038533daf21f5c63e72b5d5595f42afb885c765457097d67dad5c6043e02)
+INFO May-22 08:56:11 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-i386-filenames.solvx
+ERROR May-22 08:56:11 load_ext(): no 2 string for dyskette-gnome-320-i386
+INFO May-22 08:56:11 no presto metadata available for dyskette-gnome-320-i386
+ERROR May-22 08:56:11 load_ext(): no 5 string for dyskette-gnome-320-i386
+INFO May-22 08:56:11 no updateinfo available for dyskette-gnome-320-i386
+INFO May-22 08:56:11 using cached churchyard-chromium-russianfedora (0xae8f5c1a3ad48216cdb9f625793e95f526ddf1d722c5684e1a82b4915f5abe72)
+INFO May-22 08:56:11 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/churchyard-chromium-russianfedora-filenames.solvx
+ERROR May-22 08:56:11 load_ext(): no 2 string for churchyard-chromium-russianfedora
+INFO May-22 08:56:11 no presto metadata available for churchyard-chromium-russianfedora
+ERROR May-22 08:56:11 load_ext(): no 5 string for churchyard-chromium-russianfedora
+INFO May-22 08:56:11 no updateinfo available for churchyard-chromium-russianfedora
+INFO May-22 08:56:27 using cached rpmfusion-free (0x99cd6ec4f2ff8883cdeafe12f4366d8f259834c60166ca430a9e454eb6b318ba)
+INFO May-22 08:56:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-filenames.solvx
+ERROR May-22 08:56:27 load_ext(): no 2 string for rpmfusion-free
+INFO May-22 08:56:27 no presto metadata available for rpmfusion-free
+ERROR May-22 08:56:27 load_ext(): no 5 string for rpmfusion-free
+INFO May-22 08:56:27 no updateinfo available for rpmfusion-free
+INFO May-22 08:56:27 using cached nodesource (0x15a9741fcaef5e6bccf8f8d0c0c1276ec54c9729d7bb877707c7b4c865259285)
+INFO May-22 08:56:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/nodesource-filenames.solvx
+ERROR May-22 08:56:27 load_ext(): no 2 string for nodesource
+INFO May-22 08:56:27 no presto metadata available for nodesource
+ERROR May-22 08:56:27 load_ext(): no 5 string for nodesource
+INFO May-22 08:56:27 no updateinfo available for nodesource
+INFO May-22 08:56:27 using cached rpmfusion-nonfree (0x08ff6c0e10e7c645a53f7c9cc455d2327b6ba3ec88816fdbf07cbb884f795093)
+INFO May-22 08:56:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-filenames.solvx
+ERROR May-22 08:56:27 load_ext(): no 2 string for rpmfusion-nonfree
+INFO May-22 08:56:27 no presto metadata available for rpmfusion-nonfree
+ERROR May-22 08:56:27 load_ext(): no 5 string for rpmfusion-nonfree
+INFO May-22 08:56:27 no updateinfo available for rpmfusion-nonfree
+INFO May-22 08:56:31 fetching rpmfusion-nonfree-updates-testing
+INFO May-22 08:56:31 caching repo: rpmfusion-nonfree-updates-testing (0xd358f6629623c5f213d459d5944c00635da1baa1bd17d069e7e222fc0208693d)
+INFO May-22 08:56:31 load_ext: loading: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-updates-testing-1bc58f1c691ef7f8/repodata/f411ba9c1f328393282d000b798e6fb9414770ea18476d0cf5c60fbcc50c69f1-filelists.xml.gz
+INFO May-22 08:56:31 write_ext: storing rpmfusion-nonfree-updates-testing to: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-updates-testing-filenames.solvx.rUnsqo
+ERROR May-22 08:56:31 load_ext(): no 2 string for rpmfusion-nonfree-updates-testing
+INFO May-22 08:56:31 no presto metadata available for rpmfusion-nonfree-updates-testing
+ERROR May-22 08:56:31 load_ext(): no 5 string for rpmfusion-nonfree-updates-testing
+INFO May-22 08:56:31 no updateinfo available for rpmfusion-nonfree-updates-testing
+INFO May-22 08:57:24 Started hawkey-0.6.2.
+INFO May-22 08:57:24 Architecture is: x86_64
+INFO May-22 08:57:24 fetching rpmdb
+INFO May-22 08:57:24 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 08:57:25 using cached home_Horst3180 (0x45f2d30e89ca3a850b96a0b29c6e9ea31fe0064059968eb40189caee8e8624a7)
+INFO May-22 08:57:25 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/home_Horst3180-filenames.solvx
+ERROR May-22 08:57:25 load_ext(): no 2 string for home_Horst3180
+INFO May-22 08:57:25 no presto metadata available for home_Horst3180
+ERROR May-22 08:57:25 load_ext(): no 5 string for home_Horst3180
+INFO May-22 08:57:25 no updateinfo available for home_Horst3180
+INFO May-22 08:57:25 using cached nodesource (0x15a9741fcaef5e6bccf8f8d0c0c1276ec54c9729d7bb877707c7b4c865259285)
+INFO May-22 08:57:25 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/nodesource-filenames.solvx
+ERROR May-22 08:57:25 load_ext(): no 2 string for nodesource
+INFO May-22 08:57:25 no presto metadata available for nodesource
+ERROR May-22 08:57:25 load_ext(): no 5 string for nodesource
+INFO May-22 08:57:25 no updateinfo available for nodesource
+INFO May-22 08:57:25 using cached insync (0xd9dd9cf79073d5245994d00c2571d553af5b8f60c0831bd139b23cf67d5bb6af)
+INFO May-22 08:57:25 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/insync-filenames.solvx
+ERROR May-22 08:57:25 load_ext(): no 2 string for insync
+INFO May-22 08:57:25 no presto metadata available for insync
+ERROR May-22 08:57:25 load_ext(): no 5 string for insync
+INFO May-22 08:57:25 no updateinfo available for insync
+INFO May-22 08:57:25 using cached rpmfusion-nonfree (0x08ff6c0e10e7c645a53f7c9cc455d2327b6ba3ec88816fdbf07cbb884f795093)
+INFO May-22 08:57:25 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-filenames.solvx
+ERROR May-22 08:57:25 load_ext(): no 2 string for rpmfusion-nonfree
+INFO May-22 08:57:25 no presto metadata available for rpmfusion-nonfree
+ERROR May-22 08:57:25 load_ext(): no 5 string for rpmfusion-nonfree
+INFO May-22 08:57:25 no updateinfo available for rpmfusion-nonfree
+INFO May-22 08:57:28 using cached infinality-ultimate-noarch (0x4f0443c750b817dc7ac3c4b5be75ef865be1097869ed97f2e88093b2c7d104f3)
+INFO May-22 08:57:28 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-noarch-filenames.solvx
+ERROR May-22 08:57:28 load_ext(): no 2 string for infinality-ultimate-noarch
+INFO May-22 08:57:28 no presto metadata available for infinality-ultimate-noarch
+ERROR May-22 08:57:28 load_ext(): no 5 string for infinality-ultimate-noarch
+INFO May-22 08:57:28 no updateinfo available for infinality-ultimate-noarch
+INFO May-22 08:59:49 fetching updates
+INFO May-22 08:59:51 caching repo: updates (0x39d629a05ec0511e30fcb90ee0d4a48992d8409cf2dbe552564778c189ecc006)
+INFO May-22 08:59:51 load_ext: loading: /var/tmp/dnf-alunux-mjoo87n9/updates-e042e478e0621ea6/repodata/ae6650ce7766a5e642ab442de080cd0805808c157ca0afee63ba3e6d8be24a18-filelists.xml.gz
+INFO May-22 08:59:54 write_ext: storing updates to: /var/tmp/dnf-alunux-mjoo87n9/updates-filenames.solvx.vz1sEd
+INFO May-22 08:59:56 load_ext: loading: /var/tmp/dnf-alunux-mjoo87n9/updates-e042e478e0621ea6/repodata/d07772235dfb122c3a0f9ad4a7f4a01061115a4932780d6dee2daef1815dd5a0-prestodelta.xml.xz
+INFO May-22 08:59:56 write_ext: storing updates to: /var/tmp/dnf-alunux-mjoo87n9/updates-presto.solvx.eevW0q
+INFO May-22 08:59:57 load_ext: loading: /var/tmp/dnf-alunux-mjoo87n9/updates-e042e478e0621ea6/repodata/ae74df8c5368039ad1592dbf83940f59d760b6ff8bbdaf9e1a9862e2bfd03613-updateinfo.xml.xz
+INFO May-22 08:59:57 write_ext: storing updates to: /var/tmp/dnf-alunux-mjoo87n9/updates-updateinfo.solvx.fJ0QcG
+INFO May-22 09:00:05 using cached rpmfusion-free (0x99cd6ec4f2ff8883cdeafe12f4366d8f259834c60166ca430a9e454eb6b318ba)
+INFO May-22 09:00:05 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-filenames.solvx
+ERROR May-22 09:00:05 load_ext(): no 2 string for rpmfusion-free
+INFO May-22 09:00:05 no presto metadata available for rpmfusion-free
+ERROR May-22 09:00:05 load_ext(): no 5 string for rpmfusion-free
+INFO May-22 09:00:05 no updateinfo available for rpmfusion-free
+INFO May-22 09:00:07 using cached alunux-zeal (0xb2922d2b5f5bd4e8815b9bbed62f3a69b16163e13ac918ebf971dd5c40777b19)
+INFO May-22 09:00:07 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/alunux-zeal-filenames.solvx
+ERROR May-22 09:00:07 load_ext(): no 2 string for alunux-zeal
+INFO May-22 09:00:07 no presto metadata available for alunux-zeal
+ERROR May-22 09:00:07 load_ext(): no 5 string for alunux-zeal
+INFO May-22 09:00:07 no updateinfo available for alunux-zeal
+INFO May-22 09:00:10 using cached alunux-electric-vlsi (0x7f5e604e110bfe69f153fde5710aef1cbac6d19f1eded8b91111b9f168bb46a9)
+INFO May-22 09:00:10 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/alunux-electric-vlsi-filenames.solvx
+ERROR May-22 09:00:10 load_ext(): no 2 string for alunux-electric-vlsi
+INFO May-22 09:00:10 no presto metadata available for alunux-electric-vlsi
+ERROR May-22 09:00:10 load_ext(): no 5 string for alunux-electric-vlsi
+INFO May-22 09:00:10 no updateinfo available for alunux-electric-vlsi
+INFO May-22 09:00:10 using cached dyskette-gnome-320-i386 (0xfdf6038533daf21f5c63e72b5d5595f42afb885c765457097d67dad5c6043e02)
+INFO May-22 09:00:10 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-i386-filenames.solvx
+ERROR May-22 09:00:10 load_ext(): no 2 string for dyskette-gnome-320-i386
+INFO May-22 09:00:10 no presto metadata available for dyskette-gnome-320-i386
+ERROR May-22 09:00:10 load_ext(): no 5 string for dyskette-gnome-320-i386
+INFO May-22 09:00:10 no updateinfo available for dyskette-gnome-320-i386
+INFO May-22 09:00:12 fetching heikoada-terminix
+INFO May-22 09:00:12 caching repo: heikoada-terminix (0xa7028d908bcee617869da79ebb3f7b0dbc8b26899d6011d853fb32f0d74f501e)
+INFO May-22 09:00:12 load_ext: loading: /var/tmp/dnf-alunux-mjoo87n9/heikoada-terminix-ca9181c0a51807e8/repodata/f21403be30a2a9aa40462adf7ea884362f5aa05143c8d8d62581322622221945-filelists.xml.gz
+INFO May-22 09:00:12 write_ext: storing heikoada-terminix to: /var/tmp/dnf-alunux-mjoo87n9/heikoada-terminix-filenames.solvx.L9BmBI
+ERROR May-22 09:00:13 load_ext(): no 2 string for heikoada-terminix
+INFO May-22 09:00:13 no presto metadata available for heikoada-terminix
+ERROR May-22 09:00:13 load_ext(): no 5 string for heikoada-terminix
+INFO May-22 09:00:13 no updateinfo available for heikoada-terminix
+INFO May-22 09:00:13 using cached dyskette-gnome-320-x86_64 (0xec0f3f16b51c15760ae5829846ea5cdb8536e394282463bee87810c15fa1699a)
+INFO May-22 09:00:13 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-x86_64-filenames.solvx
+ERROR May-22 09:00:13 load_ext(): no 2 string for dyskette-gnome-320-x86_64
+INFO May-22 09:00:13 no presto metadata available for dyskette-gnome-320-x86_64
+ERROR May-22 09:00:13 load_ext(): no 5 string for dyskette-gnome-320-x86_64
+INFO May-22 09:00:13 no updateinfo available for dyskette-gnome-320-x86_64
+INFO May-22 09:00:13 using cached churchyard-chromium-russianfedora (0xae8f5c1a3ad48216cdb9f625793e95f526ddf1d722c5684e1a82b4915f5abe72)
+INFO May-22 09:00:13 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/churchyard-chromium-russianfedora-filenames.solvx
+ERROR May-22 09:00:13 load_ext(): no 2 string for churchyard-chromium-russianfedora
+INFO May-22 09:00:13 no presto metadata available for churchyard-chromium-russianfedora
+ERROR May-22 09:00:13 load_ext(): no 5 string for churchyard-chromium-russianfedora
+INFO May-22 09:00:13 no updateinfo available for churchyard-chromium-russianfedora
+INFO May-22 09:00:14 using cached virtualbox (0xf9a182718ca3867120b0ba5102c0bc96c6e044a4a9e380a10e1b7cd4b5a064a5)
+INFO May-22 09:00:14 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/virtualbox-filenames.solvx
+ERROR May-22 09:00:14 load_ext(): no 2 string for virtualbox
+INFO May-22 09:00:14 no presto metadata available for virtualbox
+ERROR May-22 09:00:14 load_ext(): no 5 string for virtualbox
+INFO May-22 09:00:14 no updateinfo available for virtualbox
+INFO May-22 09:00:14 using cached infinality-ultimate (0x62587a33219dbcaf6b420402ff453a6c8b545ce6c725ba92fa5510b30a267a41)
+INFO May-22 09:00:14 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-filenames.solvx
+ERROR May-22 09:00:14 load_ext(): no 2 string for infinality-ultimate
+INFO May-22 09:00:14 no presto metadata available for infinality-ultimate
+ERROR May-22 09:00:14 load_ext(): no 5 string for infinality-ultimate
+INFO May-22 09:00:14 no updateinfo available for infinality-ultimate
+INFO May-22 09:00:16 using cached rpmfusion-nonfree-updates-testing (0xd358f6629623c5f213d459d5944c00635da1baa1bd17d069e7e222fc0208693d)
+INFO May-22 09:00:16 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-updates-testing-filenames.solvx
+ERROR May-22 09:00:16 load_ext(): no 2 string for rpmfusion-nonfree-updates-testing
+INFO May-22 09:00:16 no presto metadata available for rpmfusion-nonfree-updates-testing
+ERROR May-22 09:00:16 load_ext(): no 5 string for rpmfusion-nonfree-updates-testing
+INFO May-22 09:00:16 no updateinfo available for rpmfusion-nonfree-updates-testing
+INFO May-22 09:00:16 using cached rommon-telegram (0x93f1ac1197c3dba24d980298570ba679f0011a5d05067d6e8d9b5cfe6f0fab70)
+INFO May-22 09:00:16 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rommon-telegram-filenames.solvx
+ERROR May-22 09:00:16 load_ext(): no 2 string for rommon-telegram
+INFO May-22 09:00:16 no presto metadata available for rommon-telegram
+ERROR May-22 09:00:16 load_ext(): no 5 string for rommon-telegram
+INFO May-22 09:00:16 no updateinfo available for rommon-telegram
+INFO May-22 09:00:16 using cached fedora (0x0c2ba40111c8817b2aff89b0487d6aeac87c38083b39ce3ba017e644449d7ade)
+INFO May-22 09:00:16 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/fedora-filenames.solvx
+ERROR May-22 09:00:16 load_ext(): no 2 string for fedora
+INFO May-22 09:00:16 no presto metadata available for fedora
+ERROR May-22 09:00:16 load_ext(): no 5 string for fedora
+INFO May-22 09:00:16 no updateinfo available for fedora
+INFO May-22 09:00:20 fetching rpmfusion-free-updates-testing
+INFO May-22 09:00:20 caching repo: rpmfusion-free-updates-testing (0x1bf11d3d30f736cf35e387dc75ffc0652db756df95fbf42f53b4bcbb1f1fe0df)
+INFO May-22 09:00:20 load_ext: loading: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-updates-testing-8d8f1eadc099f911/repodata/06cd98dd510b639f8bf285e4659ccd3d090f9a35db25d991d953858017143ef8-filelists.xml.gz
+INFO May-22 09:00:20 write_ext: storing rpmfusion-free-updates-testing to: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-updates-testing-filenames.solvx.zYIf88
+ERROR May-22 09:00:20 load_ext(): no 2 string for rpmfusion-free-updates-testing
+INFO May-22 09:00:20 no presto metadata available for rpmfusion-free-updates-testing
+ERROR May-22 09:00:20 load_ext(): no 5 string for rpmfusion-free-updates-testing
+INFO May-22 09:00:20 no updateinfo available for rpmfusion-free-updates-testing
+INFO May-22 09:00:20 rewriting repo: @System
+INFO May-22 09:00:20 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 09:00:20 rewriting repo: nodesource
+INFO May-22 09:00:20 caching repo: nodesource (0x15a9741fcaef5e6bccf8f8d0c0c1276ec54c9729d7bb877707c7b4c865259285)
+INFO May-22 09:00:20 rewriting repo: insync
+INFO May-22 09:00:20 caching repo: insync (0xd9dd9cf79073d5245994d00c2571d553af5b8f60c0831bd139b23cf67d5bb6af)
+INFO May-22 09:00:21 rewriting repo: updates
+INFO May-22 09:00:21 caching repo: updates (0x39d629a05ec0511e30fcb90ee0d4a48992d8409cf2dbe552564778c189ecc006)
+INFO May-22 09:00:21 rewriting repo: heikoada-terminix
+INFO May-22 09:00:21 caching repo: heikoada-terminix (0xa7028d908bcee617869da79ebb3f7b0dbc8b26899d6011d853fb32f0d74f501e)
+INFO May-22 09:00:21 rewriting repo: virtualbox
+INFO May-22 09:00:21 caching repo: virtualbox (0xf9a182718ca3867120b0ba5102c0bc96c6e044a4a9e380a10e1b7cd4b5a064a5)
+INFO May-22 09:00:21 rewriting repo: rpmfusion-nonfree-updates-testing
+INFO May-22 09:00:21 caching repo: rpmfusion-nonfree-updates-testing (0xd358f6629623c5f213d459d5944c00635da1baa1bd17d069e7e222fc0208693d)
+INFO May-22 09:00:21 rewriting repo: rpmfusion-free-updates-testing
+INFO May-22 09:00:21 caching repo: rpmfusion-free-updates-testing (0x1bf11d3d30f736cf35e387dc75ffc0652db756df95fbf42f53b4bcbb1f1fe0df)
+INFO May-22 09:13:27 Started hawkey-0.6.2.
+INFO May-22 09:13:27 Architecture is: x86_64
+INFO May-22 09:13:27 fetching rpmdb
+INFO May-22 09:13:27 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 09:13:27 using cached rpmfusion-free (0x99cd6ec4f2ff8883cdeafe12f4366d8f259834c60166ca430a9e454eb6b318ba)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for rpmfusion-free
+INFO May-22 09:13:27 no presto metadata available for rpmfusion-free
+ERROR May-22 09:13:27 load_ext(): no 5 string for rpmfusion-free
+INFO May-22 09:13:27 no updateinfo available for rpmfusion-free
+INFO May-22 09:13:27 using cached virtualbox (0xf9a182718ca3867120b0ba5102c0bc96c6e044a4a9e380a10e1b7cd4b5a064a5)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/virtualbox-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for virtualbox
+INFO May-22 09:13:27 no presto metadata available for virtualbox
+ERROR May-22 09:13:27 load_ext(): no 5 string for virtualbox
+INFO May-22 09:13:27 no updateinfo available for virtualbox
+INFO May-22 09:13:27 using cached alunux-zeal (0xb2922d2b5f5bd4e8815b9bbed62f3a69b16163e13ac918ebf971dd5c40777b19)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/alunux-zeal-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for alunux-zeal
+INFO May-22 09:13:27 no presto metadata available for alunux-zeal
+ERROR May-22 09:13:27 load_ext(): no 5 string for alunux-zeal
+INFO May-22 09:13:27 no updateinfo available for alunux-zeal
+INFO May-22 09:13:27 using cached heikoada-terminix (0xa7028d908bcee617869da79ebb3f7b0dbc8b26899d6011d853fb32f0d74f501e)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/heikoada-terminix-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for heikoada-terminix
+INFO May-22 09:13:27 no presto metadata available for heikoada-terminix
+ERROR May-22 09:13:27 load_ext(): no 5 string for heikoada-terminix
+INFO May-22 09:13:27 no updateinfo available for heikoada-terminix
+INFO May-22 09:13:27 using cached alunux-electric-vlsi (0x7f5e604e110bfe69f153fde5710aef1cbac6d19f1eded8b91111b9f168bb46a9)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/alunux-electric-vlsi-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for alunux-electric-vlsi
+INFO May-22 09:13:27 no presto metadata available for alunux-electric-vlsi
+ERROR May-22 09:13:27 load_ext(): no 5 string for alunux-electric-vlsi
+INFO May-22 09:13:27 no updateinfo available for alunux-electric-vlsi
+INFO May-22 09:13:27 using cached nodesource (0x15a9741fcaef5e6bccf8f8d0c0c1276ec54c9729d7bb877707c7b4c865259285)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/nodesource-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for nodesource
+INFO May-22 09:13:27 no presto metadata available for nodesource
+ERROR May-22 09:13:27 load_ext(): no 5 string for nodesource
+INFO May-22 09:13:27 no updateinfo available for nodesource
+INFO May-22 09:13:27 using cached rommon-telegram (0x93f1ac1197c3dba24d980298570ba679f0011a5d05067d6e8d9b5cfe6f0fab70)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rommon-telegram-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for rommon-telegram
+INFO May-22 09:13:27 no presto metadata available for rommon-telegram
+ERROR May-22 09:13:27 load_ext(): no 5 string for rommon-telegram
+INFO May-22 09:13:27 no updateinfo available for rommon-telegram
+INFO May-22 09:13:27 using cached infinality-ultimate-noarch (0x4f0443c750b817dc7ac3c4b5be75ef865be1097869ed97f2e88093b2c7d104f3)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-noarch-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for infinality-ultimate-noarch
+INFO May-22 09:13:27 no presto metadata available for infinality-ultimate-noarch
+ERROR May-22 09:13:27 load_ext(): no 5 string for infinality-ultimate-noarch
+INFO May-22 09:13:27 no updateinfo available for infinality-ultimate-noarch
+INFO May-22 09:13:27 using cached updates (0x39d629a05ec0511e30fcb90ee0d4a48992d8409cf2dbe552564778c189ecc006)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-filenames.solvx
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-presto.solvx
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-updateinfo.solvx
+INFO May-22 09:13:27 using cached dyskette-gnome-320-i386 (0xfdf6038533daf21f5c63e72b5d5595f42afb885c765457097d67dad5c6043e02)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-i386-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for dyskette-gnome-320-i386
+INFO May-22 09:13:27 no presto metadata available for dyskette-gnome-320-i386
+ERROR May-22 09:13:27 load_ext(): no 5 string for dyskette-gnome-320-i386
+INFO May-22 09:13:27 no updateinfo available for dyskette-gnome-320-i386
+INFO May-22 09:13:27 using cached rpmfusion-nonfree-updates-testing (0xd358f6629623c5f213d459d5944c00635da1baa1bd17d069e7e222fc0208693d)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-updates-testing-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for rpmfusion-nonfree-updates-testing
+INFO May-22 09:13:27 no presto metadata available for rpmfusion-nonfree-updates-testing
+ERROR May-22 09:13:27 load_ext(): no 5 string for rpmfusion-nonfree-updates-testing
+INFO May-22 09:13:27 no updateinfo available for rpmfusion-nonfree-updates-testing
+INFO May-22 09:13:27 using cached rpmfusion-nonfree (0x08ff6c0e10e7c645a53f7c9cc455d2327b6ba3ec88816fdbf07cbb884f795093)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for rpmfusion-nonfree
+INFO May-22 09:13:27 no presto metadata available for rpmfusion-nonfree
+ERROR May-22 09:13:27 load_ext(): no 5 string for rpmfusion-nonfree
+INFO May-22 09:13:27 no updateinfo available for rpmfusion-nonfree
+INFO May-22 09:13:27 using cached fedora (0x0c2ba40111c8817b2aff89b0487d6aeac87c38083b39ce3ba017e644449d7ade)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/fedora-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for fedora
+INFO May-22 09:13:27 no presto metadata available for fedora
+ERROR May-22 09:13:27 load_ext(): no 5 string for fedora
+INFO May-22 09:13:27 no updateinfo available for fedora
+INFO May-22 09:13:27 using cached churchyard-chromium-russianfedora (0xae8f5c1a3ad48216cdb9f625793e95f526ddf1d722c5684e1a82b4915f5abe72)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/churchyard-chromium-russianfedora-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for churchyard-chromium-russianfedora
+INFO May-22 09:13:27 no presto metadata available for churchyard-chromium-russianfedora
+ERROR May-22 09:13:27 load_ext(): no 5 string for churchyard-chromium-russianfedora
+INFO May-22 09:13:27 no updateinfo available for churchyard-chromium-russianfedora
+INFO May-22 09:13:27 using cached insync (0xd9dd9cf79073d5245994d00c2571d553af5b8f60c0831bd139b23cf67d5bb6af)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/insync-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for insync
+INFO May-22 09:13:27 no presto metadata available for insync
+ERROR May-22 09:13:27 load_ext(): no 5 string for insync
+INFO May-22 09:13:27 no updateinfo available for insync
+INFO May-22 09:13:27 using cached infinality-ultimate (0x62587a33219dbcaf6b420402ff453a6c8b545ce6c725ba92fa5510b30a267a41)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for infinality-ultimate
+INFO May-22 09:13:27 no presto metadata available for infinality-ultimate
+ERROR May-22 09:13:27 load_ext(): no 5 string for infinality-ultimate
+INFO May-22 09:13:27 no updateinfo available for infinality-ultimate
+INFO May-22 09:13:27 using cached dyskette-gnome-320-x86_64 (0xec0f3f16b51c15760ae5829846ea5cdb8536e394282463bee87810c15fa1699a)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-x86_64-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for dyskette-gnome-320-x86_64
+INFO May-22 09:13:27 no presto metadata available for dyskette-gnome-320-x86_64
+ERROR May-22 09:13:27 load_ext(): no 5 string for dyskette-gnome-320-x86_64
+INFO May-22 09:13:27 no updateinfo available for dyskette-gnome-320-x86_64
+INFO May-22 09:13:27 using cached home_Horst3180 (0x45f2d30e89ca3a850b96a0b29c6e9ea31fe0064059968eb40189caee8e8624a7)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/home_Horst3180-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for home_Horst3180
+INFO May-22 09:13:27 no presto metadata available for home_Horst3180
+ERROR May-22 09:13:27 load_ext(): no 5 string for home_Horst3180
+INFO May-22 09:13:27 no updateinfo available for home_Horst3180
+INFO May-22 09:13:27 using cached rpmfusion-free-updates-testing (0x1bf11d3d30f736cf35e387dc75ffc0652db756df95fbf42f53b4bcbb1f1fe0df)
+INFO May-22 09:13:27 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-updates-testing-filenames.solvx
+ERROR May-22 09:13:27 load_ext(): no 2 string for rpmfusion-free-updates-testing
+INFO May-22 09:13:27 no presto metadata available for rpmfusion-free-updates-testing
+ERROR May-22 09:13:27 load_ext(): no 5 string for rpmfusion-free-updates-testing
+INFO May-22 09:13:27 no updateinfo available for rpmfusion-free-updates-testing
+INFO May-22 09:13:27 rewriting repo: @System
+INFO May-22 09:13:27 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 09:14:31 Started hawkey-0.6.2.
+INFO May-22 09:14:31 Architecture is: x86_64
+INFO May-22 09:14:31 fetching rpmdb
+INFO May-22 09:14:31 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 09:14:31 using cached fedora (0x0c2ba40111c8817b2aff89b0487d6aeac87c38083b39ce3ba017e644449d7ade)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/fedora-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for fedora
+INFO May-22 09:14:31 no presto metadata available for fedora
+ERROR May-22 09:14:31 load_ext(): no 5 string for fedora
+INFO May-22 09:14:31 no updateinfo available for fedora
+INFO May-22 09:14:31 using cached rpmfusion-nonfree (0x08ff6c0e10e7c645a53f7c9cc455d2327b6ba3ec88816fdbf07cbb884f795093)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for rpmfusion-nonfree
+INFO May-22 09:14:31 no presto metadata available for rpmfusion-nonfree
+ERROR May-22 09:14:31 load_ext(): no 5 string for rpmfusion-nonfree
+INFO May-22 09:14:31 no updateinfo available for rpmfusion-nonfree
+INFO May-22 09:14:31 using cached alunux-zeal (0xb2922d2b5f5bd4e8815b9bbed62f3a69b16163e13ac918ebf971dd5c40777b19)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/alunux-zeal-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for alunux-zeal
+INFO May-22 09:14:31 no presto metadata available for alunux-zeal
+ERROR May-22 09:14:31 load_ext(): no 5 string for alunux-zeal
+INFO May-22 09:14:31 no updateinfo available for alunux-zeal
+INFO May-22 09:14:31 using cached rpmfusion-nonfree-updates-testing (0xd358f6629623c5f213d459d5944c00635da1baa1bd17d069e7e222fc0208693d)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-updates-testing-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for rpmfusion-nonfree-updates-testing
+INFO May-22 09:14:31 no presto metadata available for rpmfusion-nonfree-updates-testing
+ERROR May-22 09:14:31 load_ext(): no 5 string for rpmfusion-nonfree-updates-testing
+INFO May-22 09:14:31 no updateinfo available for rpmfusion-nonfree-updates-testing
+INFO May-22 09:14:31 using cached nodesource (0x15a9741fcaef5e6bccf8f8d0c0c1276ec54c9729d7bb877707c7b4c865259285)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/nodesource-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for nodesource
+INFO May-22 09:14:31 no presto metadata available for nodesource
+ERROR May-22 09:14:31 load_ext(): no 5 string for nodesource
+INFO May-22 09:14:31 no updateinfo available for nodesource
+INFO May-22 09:14:31 using cached rpmfusion-free (0x99cd6ec4f2ff8883cdeafe12f4366d8f259834c60166ca430a9e454eb6b318ba)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for rpmfusion-free
+INFO May-22 09:14:31 no presto metadata available for rpmfusion-free
+ERROR May-22 09:14:31 load_ext(): no 5 string for rpmfusion-free
+INFO May-22 09:14:31 no updateinfo available for rpmfusion-free
+INFO May-22 09:14:31 using cached infinality-ultimate (0x62587a33219dbcaf6b420402ff453a6c8b545ce6c725ba92fa5510b30a267a41)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for infinality-ultimate
+INFO May-22 09:14:31 no presto metadata available for infinality-ultimate
+ERROR May-22 09:14:31 load_ext(): no 5 string for infinality-ultimate
+INFO May-22 09:14:31 no updateinfo available for infinality-ultimate
+INFO May-22 09:14:31 using cached infinality-ultimate-noarch (0x4f0443c750b817dc7ac3c4b5be75ef865be1097869ed97f2e88093b2c7d104f3)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-noarch-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for infinality-ultimate-noarch
+INFO May-22 09:14:31 no presto metadata available for infinality-ultimate-noarch
+ERROR May-22 09:14:31 load_ext(): no 5 string for infinality-ultimate-noarch
+INFO May-22 09:14:31 no updateinfo available for infinality-ultimate-noarch
+INFO May-22 09:14:31 using cached churchyard-chromium-russianfedora (0xae8f5c1a3ad48216cdb9f625793e95f526ddf1d722c5684e1a82b4915f5abe72)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/churchyard-chromium-russianfedora-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for churchyard-chromium-russianfedora
+INFO May-22 09:14:31 no presto metadata available for churchyard-chromium-russianfedora
+ERROR May-22 09:14:31 load_ext(): no 5 string for churchyard-chromium-russianfedora
+INFO May-22 09:14:31 no updateinfo available for churchyard-chromium-russianfedora
+INFO May-22 09:14:31 using cached home_Horst3180 (0x45f2d30e89ca3a850b96a0b29c6e9ea31fe0064059968eb40189caee8e8624a7)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/home_Horst3180-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for home_Horst3180
+INFO May-22 09:14:31 no presto metadata available for home_Horst3180
+ERROR May-22 09:14:31 load_ext(): no 5 string for home_Horst3180
+INFO May-22 09:14:31 no updateinfo available for home_Horst3180
+INFO May-22 09:14:31 using cached dyskette-gnome-320-x86_64 (0xec0f3f16b51c15760ae5829846ea5cdb8536e394282463bee87810c15fa1699a)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-x86_64-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for dyskette-gnome-320-x86_64
+INFO May-22 09:14:31 no presto metadata available for dyskette-gnome-320-x86_64
+ERROR May-22 09:14:31 load_ext(): no 5 string for dyskette-gnome-320-x86_64
+INFO May-22 09:14:31 no updateinfo available for dyskette-gnome-320-x86_64
+INFO May-22 09:14:31 using cached alunux-electric-vlsi (0x7f5e604e110bfe69f153fde5710aef1cbac6d19f1eded8b91111b9f168bb46a9)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/alunux-electric-vlsi-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for alunux-electric-vlsi
+INFO May-22 09:14:31 no presto metadata available for alunux-electric-vlsi
+ERROR May-22 09:14:31 load_ext(): no 5 string for alunux-electric-vlsi
+INFO May-22 09:14:31 no updateinfo available for alunux-electric-vlsi
+INFO May-22 09:14:31 using cached heikoada-terminix (0xa7028d908bcee617869da79ebb3f7b0dbc8b26899d6011d853fb32f0d74f501e)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/heikoada-terminix-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for heikoada-terminix
+INFO May-22 09:14:31 no presto metadata available for heikoada-terminix
+ERROR May-22 09:14:31 load_ext(): no 5 string for heikoada-terminix
+INFO May-22 09:14:31 no updateinfo available for heikoada-terminix
+INFO May-22 09:14:31 using cached rommon-telegram (0x93f1ac1197c3dba24d980298570ba679f0011a5d05067d6e8d9b5cfe6f0fab70)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rommon-telegram-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for rommon-telegram
+INFO May-22 09:14:31 no presto metadata available for rommon-telegram
+ERROR May-22 09:14:31 load_ext(): no 5 string for rommon-telegram
+INFO May-22 09:14:31 no updateinfo available for rommon-telegram
+INFO May-22 09:14:31 using cached insync (0xd9dd9cf79073d5245994d00c2571d553af5b8f60c0831bd139b23cf67d5bb6af)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/insync-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for insync
+INFO May-22 09:14:31 no presto metadata available for insync
+ERROR May-22 09:14:31 load_ext(): no 5 string for insync
+INFO May-22 09:14:31 no updateinfo available for insync
+INFO May-22 09:14:31 using cached rpmfusion-free-updates-testing (0x1bf11d3d30f736cf35e387dc75ffc0652db756df95fbf42f53b4bcbb1f1fe0df)
+INFO May-22 09:14:31 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-updates-testing-filenames.solvx
+ERROR May-22 09:14:31 load_ext(): no 2 string for rpmfusion-free-updates-testing
+INFO May-22 09:14:31 no presto metadata available for rpmfusion-free-updates-testing
+ERROR May-22 09:14:31 load_ext(): no 5 string for rpmfusion-free-updates-testing
+INFO May-22 09:14:31 no updateinfo available for rpmfusion-free-updates-testing
+INFO May-22 09:14:31 using cached updates (0x39d629a05ec0511e30fcb90ee0d4a48992d8409cf2dbe552564778c189ecc006)
+INFO May-22 09:14:32 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-filenames.solvx
+INFO May-22 09:14:32 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-presto.solvx
+INFO May-22 09:14:32 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-updateinfo.solvx
+INFO May-22 09:14:32 using cached dyskette-gnome-320-i386 (0xfdf6038533daf21f5c63e72b5d5595f42afb885c765457097d67dad5c6043e02)
+INFO May-22 09:14:32 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-i386-filenames.solvx
+ERROR May-22 09:14:32 load_ext(): no 2 string for dyskette-gnome-320-i386
+INFO May-22 09:14:32 no presto metadata available for dyskette-gnome-320-i386
+ERROR May-22 09:14:32 load_ext(): no 5 string for dyskette-gnome-320-i386
+INFO May-22 09:14:32 no updateinfo available for dyskette-gnome-320-i386
+INFO May-22 09:14:32 using cached virtualbox (0xf9a182718ca3867120b0ba5102c0bc96c6e044a4a9e380a10e1b7cd4b5a064a5)
+INFO May-22 09:14:32 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/virtualbox-filenames.solvx
+ERROR May-22 09:14:32 load_ext(): no 2 string for virtualbox
+INFO May-22 09:14:32 no presto metadata available for virtualbox
+ERROR May-22 09:14:32 load_ext(): no 5 string for virtualbox
+INFO May-22 09:14:32 no updateinfo available for virtualbox
+INFO May-22 09:14:32 rewriting repo: @System
+INFO May-22 09:14:32 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 09:14:35 Started hawkey-0.6.2.
+INFO May-22 09:14:35 Architecture is: x86_64
+INFO May-22 09:14:35 fetching rpmdb
+INFO May-22 09:14:35 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 09:14:35 using cached home_Horst3180 (0x45f2d30e89ca3a850b96a0b29c6e9ea31fe0064059968eb40189caee8e8624a7)
+INFO May-22 09:14:35 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/home_Horst3180-filenames.solvx
+ERROR May-22 09:14:35 load_ext(): no 2 string for home_Horst3180
+INFO May-22 09:14:35 no presto metadata available for home_Horst3180
+ERROR May-22 09:14:35 load_ext(): no 5 string for home_Horst3180
+INFO May-22 09:14:35 no updateinfo available for home_Horst3180
+INFO May-22 09:14:35 using cached rommon-telegram (0x93f1ac1197c3dba24d980298570ba679f0011a5d05067d6e8d9b5cfe6f0fab70)
+INFO May-22 09:14:35 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rommon-telegram-filenames.solvx
+ERROR May-22 09:14:35 load_ext(): no 2 string for rommon-telegram
+INFO May-22 09:14:35 no presto metadata available for rommon-telegram
+ERROR May-22 09:14:35 load_ext(): no 5 string for rommon-telegram
+INFO May-22 09:14:35 no updateinfo available for rommon-telegram
+INFO May-22 09:14:35 using cached alunux-zeal (0xb2922d2b5f5bd4e8815b9bbed62f3a69b16163e13ac918ebf971dd5c40777b19)
+INFO May-22 09:14:35 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/alunux-zeal-filenames.solvx
+ERROR May-22 09:14:35 load_ext(): no 2 string for alunux-zeal
+INFO May-22 09:14:35 no presto metadata available for alunux-zeal
+ERROR May-22 09:14:35 load_ext(): no 5 string for alunux-zeal
+INFO May-22 09:14:35 no updateinfo available for alunux-zeal
+INFO May-22 09:14:35 using cached infinality-ultimate-noarch (0x4f0443c750b817dc7ac3c4b5be75ef865be1097869ed97f2e88093b2c7d104f3)
+INFO May-22 09:14:35 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-noarch-filenames.solvx
+ERROR May-22 09:14:35 load_ext(): no 2 string for infinality-ultimate-noarch
+INFO May-22 09:14:35 no presto metadata available for infinality-ultimate-noarch
+ERROR May-22 09:14:35 load_ext(): no 5 string for infinality-ultimate-noarch
+INFO May-22 09:14:35 no updateinfo available for infinality-ultimate-noarch
+INFO May-22 09:14:35 using cached rpmfusion-nonfree (0x08ff6c0e10e7c645a53f7c9cc455d2327b6ba3ec88816fdbf07cbb884f795093)
+INFO May-22 09:14:35 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-filenames.solvx
+ERROR May-22 09:14:35 load_ext(): no 2 string for rpmfusion-nonfree
+INFO May-22 09:14:35 no presto metadata available for rpmfusion-nonfree
+ERROR May-22 09:14:35 load_ext(): no 5 string for rpmfusion-nonfree
+INFO May-22 09:14:35 no updateinfo available for rpmfusion-nonfree
+INFO May-22 09:14:35 using cached insync (0xd9dd9cf79073d5245994d00c2571d553af5b8f60c0831bd139b23cf67d5bb6af)
+INFO May-22 09:14:35 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/insync-filenames.solvx
+ERROR May-22 09:14:35 load_ext(): no 2 string for insync
+INFO May-22 09:14:35 no presto metadata available for insync
+ERROR May-22 09:14:35 load_ext(): no 5 string for insync
+INFO May-22 09:14:35 no updateinfo available for insync
+INFO May-22 09:14:35 using cached dyskette-gnome-320-i386 (0xfdf6038533daf21f5c63e72b5d5595f42afb885c765457097d67dad5c6043e02)
+INFO May-22 09:14:35 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-i386-filenames.solvx
+ERROR May-22 09:14:35 load_ext(): no 2 string for dyskette-gnome-320-i386
+INFO May-22 09:14:35 no presto metadata available for dyskette-gnome-320-i386
+ERROR May-22 09:14:35 load_ext(): no 5 string for dyskette-gnome-320-i386
+INFO May-22 09:14:35 no updateinfo available for dyskette-gnome-320-i386
+INFO May-22 09:14:35 using cached alunux-electric-vlsi (0x7f5e604e110bfe69f153fde5710aef1cbac6d19f1eded8b91111b9f168bb46a9)
+INFO May-22 09:14:35 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/alunux-electric-vlsi-filenames.solvx
+ERROR May-22 09:14:35 load_ext(): no 2 string for alunux-electric-vlsi
+INFO May-22 09:14:35 no presto metadata available for alunux-electric-vlsi
+ERROR May-22 09:14:35 load_ext(): no 5 string for alunux-electric-vlsi
+INFO May-22 09:14:35 no updateinfo available for alunux-electric-vlsi
+INFO May-22 09:14:35 using cached churchyard-chromium-russianfedora (0xae8f5c1a3ad48216cdb9f625793e95f526ddf1d722c5684e1a82b4915f5abe72)
+INFO May-22 09:14:35 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/churchyard-chromium-russianfedora-filenames.solvx
+ERROR May-22 09:14:35 load_ext(): no 2 string for churchyard-chromium-russianfedora
+INFO May-22 09:14:35 no presto metadata available for churchyard-chromium-russianfedora
+ERROR May-22 09:14:35 load_ext(): no 5 string for churchyard-chromium-russianfedora
+INFO May-22 09:14:35 no updateinfo available for churchyard-chromium-russianfedora
+INFO May-22 09:14:35 using cached rpmfusion-nonfree-updates-testing (0xd358f6629623c5f213d459d5944c00635da1baa1bd17d069e7e222fc0208693d)
+INFO May-22 09:14:35 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-updates-testing-filenames.solvx
+ERROR May-22 09:14:35 load_ext(): no 2 string for rpmfusion-nonfree-updates-testing
+INFO May-22 09:14:35 no presto metadata available for rpmfusion-nonfree-updates-testing
+ERROR May-22 09:14:35 load_ext(): no 5 string for rpmfusion-nonfree-updates-testing
+INFO May-22 09:14:35 no updateinfo available for rpmfusion-nonfree-updates-testing
+INFO May-22 09:14:35 using cached dyskette-gnome-320-x86_64 (0xec0f3f16b51c15760ae5829846ea5cdb8536e394282463bee87810c15fa1699a)
+INFO May-22 09:14:35 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-x86_64-filenames.solvx
+ERROR May-22 09:14:35 load_ext(): no 2 string for dyskette-gnome-320-x86_64
+INFO May-22 09:14:35 no presto metadata available for dyskette-gnome-320-x86_64
+ERROR May-22 09:14:35 load_ext(): no 5 string for dyskette-gnome-320-x86_64
+INFO May-22 09:14:35 no updateinfo available for dyskette-gnome-320-x86_64
+INFO May-22 09:14:35 using cached fedora (0x0c2ba40111c8817b2aff89b0487d6aeac87c38083b39ce3ba017e644449d7ade)
+INFO May-22 09:14:36 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/fedora-filenames.solvx
+ERROR May-22 09:14:36 load_ext(): no 2 string for fedora
+INFO May-22 09:14:36 no presto metadata available for fedora
+ERROR May-22 09:14:36 load_ext(): no 5 string for fedora
+INFO May-22 09:14:36 no updateinfo available for fedora
+INFO May-22 09:14:36 using cached rpmfusion-free-updates-testing (0x1bf11d3d30f736cf35e387dc75ffc0652db756df95fbf42f53b4bcbb1f1fe0df)
+INFO May-22 09:14:36 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-updates-testing-filenames.solvx
+ERROR May-22 09:14:36 load_ext(): no 2 string for rpmfusion-free-updates-testing
+INFO May-22 09:14:36 no presto metadata available for rpmfusion-free-updates-testing
+ERROR May-22 09:14:36 load_ext(): no 5 string for rpmfusion-free-updates-testing
+INFO May-22 09:14:36 no updateinfo available for rpmfusion-free-updates-testing
+INFO May-22 09:14:36 using cached virtualbox (0xf9a182718ca3867120b0ba5102c0bc96c6e044a4a9e380a10e1b7cd4b5a064a5)
+INFO May-22 09:14:36 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/virtualbox-filenames.solvx
+ERROR May-22 09:14:36 load_ext(): no 2 string for virtualbox
+INFO May-22 09:14:36 no presto metadata available for virtualbox
+ERROR May-22 09:14:36 load_ext(): no 5 string for virtualbox
+INFO May-22 09:14:36 no updateinfo available for virtualbox
+INFO May-22 09:14:36 using cached rpmfusion-free (0x99cd6ec4f2ff8883cdeafe12f4366d8f259834c60166ca430a9e454eb6b318ba)
+INFO May-22 09:14:36 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-filenames.solvx
+ERROR May-22 09:14:36 load_ext(): no 2 string for rpmfusion-free
+INFO May-22 09:14:36 no presto metadata available for rpmfusion-free
+ERROR May-22 09:14:36 load_ext(): no 5 string for rpmfusion-free
+INFO May-22 09:14:36 no updateinfo available for rpmfusion-free
+INFO May-22 09:14:36 using cached infinality-ultimate (0x62587a33219dbcaf6b420402ff453a6c8b545ce6c725ba92fa5510b30a267a41)
+INFO May-22 09:14:36 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-filenames.solvx
+ERROR May-22 09:14:36 load_ext(): no 2 string for infinality-ultimate
+INFO May-22 09:14:36 no presto metadata available for infinality-ultimate
+ERROR May-22 09:14:36 load_ext(): no 5 string for infinality-ultimate
+INFO May-22 09:14:36 no updateinfo available for infinality-ultimate
+INFO May-22 09:14:36 using cached updates (0x39d629a05ec0511e30fcb90ee0d4a48992d8409cf2dbe552564778c189ecc006)
+INFO May-22 09:14:36 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-filenames.solvx
+INFO May-22 09:14:36 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-presto.solvx
+INFO May-22 09:14:36 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-updateinfo.solvx
+INFO May-22 09:14:36 using cached nodesource (0x15a9741fcaef5e6bccf8f8d0c0c1276ec54c9729d7bb877707c7b4c865259285)
+INFO May-22 09:14:36 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/nodesource-filenames.solvx
+ERROR May-22 09:14:36 load_ext(): no 2 string for nodesource
+INFO May-22 09:14:36 no presto metadata available for nodesource
+ERROR May-22 09:14:36 load_ext(): no 5 string for nodesource
+INFO May-22 09:14:36 no updateinfo available for nodesource
+INFO May-22 09:14:36 using cached heikoada-terminix (0xa7028d908bcee617869da79ebb3f7b0dbc8b26899d6011d853fb32f0d74f501e)
+INFO May-22 09:14:36 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/heikoada-terminix-filenames.solvx
+ERROR May-22 09:14:36 load_ext(): no 2 string for heikoada-terminix
+INFO May-22 09:14:36 no presto metadata available for heikoada-terminix
+ERROR May-22 09:14:36 load_ext(): no 5 string for heikoada-terminix
+INFO May-22 09:14:36 no updateinfo available for heikoada-terminix
+INFO May-22 09:14:36 rewriting repo: @System
+INFO May-22 09:14:36 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 09:14:57 Started hawkey-0.6.2.
+INFO May-22 09:14:57 Architecture is: x86_64
+INFO May-22 09:14:57 fetching rpmdb
+INFO May-22 09:14:57 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 09:14:57 using cached churchyard-chromium-russianfedora (0xae8f5c1a3ad48216cdb9f625793e95f526ddf1d722c5684e1a82b4915f5abe72)
+INFO May-22 09:14:57 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/churchyard-chromium-russianfedora-filenames.solvx
+ERROR May-22 09:14:57 load_ext(): no 2 string for churchyard-chromium-russianfedora
+INFO May-22 09:14:57 no presto metadata available for churchyard-chromium-russianfedora
+ERROR May-22 09:14:57 load_ext(): no 5 string for churchyard-chromium-russianfedora
+INFO May-22 09:14:57 no updateinfo available for churchyard-chromium-russianfedora
+INFO May-22 09:14:57 using cached alunux-zeal (0xb2922d2b5f5bd4e8815b9bbed62f3a69b16163e13ac918ebf971dd5c40777b19)
+INFO May-22 09:14:57 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/alunux-zeal-filenames.solvx
+ERROR May-22 09:14:57 load_ext(): no 2 string for alunux-zeal
+INFO May-22 09:14:57 no presto metadata available for alunux-zeal
+ERROR May-22 09:14:57 load_ext(): no 5 string for alunux-zeal
+INFO May-22 09:14:57 no updateinfo available for alunux-zeal
+INFO May-22 09:14:57 using cached fedora (0x0c2ba40111c8817b2aff89b0487d6aeac87c38083b39ce3ba017e644449d7ade)
+INFO May-22 09:14:57 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/fedora-filenames.solvx
+ERROR May-22 09:14:57 load_ext(): no 2 string for fedora
+INFO May-22 09:14:57 no presto metadata available for fedora
+ERROR May-22 09:14:57 load_ext(): no 5 string for fedora
+INFO May-22 09:14:57 no updateinfo available for fedora
+INFO May-22 09:14:57 using cached rpmfusion-free-updates-testing (0x1bf11d3d30f736cf35e387dc75ffc0652db756df95fbf42f53b4bcbb1f1fe0df)
+INFO May-22 09:14:57 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-updates-testing-filenames.solvx
+ERROR May-22 09:14:57 load_ext(): no 2 string for rpmfusion-free-updates-testing
+INFO May-22 09:14:57 no presto metadata available for rpmfusion-free-updates-testing
+ERROR May-22 09:14:57 load_ext(): no 5 string for rpmfusion-free-updates-testing
+INFO May-22 09:14:57 no updateinfo available for rpmfusion-free-updates-testing
+INFO May-22 09:14:57 using cached virtualbox (0xf9a182718ca3867120b0ba5102c0bc96c6e044a4a9e380a10e1b7cd4b5a064a5)
+INFO May-22 09:14:57 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/virtualbox-filenames.solvx
+ERROR May-22 09:14:57 load_ext(): no 2 string for virtualbox
+INFO May-22 09:14:57 no presto metadata available for virtualbox
+ERROR May-22 09:14:57 load_ext(): no 5 string for virtualbox
+INFO May-22 09:14:57 no updateinfo available for virtualbox
+INFO May-22 09:14:57 using cached home_Horst3180 (0x45f2d30e89ca3a850b96a0b29c6e9ea31fe0064059968eb40189caee8e8624a7)
+INFO May-22 09:14:57 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/home_Horst3180-filenames.solvx
+ERROR May-22 09:14:57 load_ext(): no 2 string for home_Horst3180
+INFO May-22 09:14:57 no presto metadata available for home_Horst3180
+ERROR May-22 09:14:57 load_ext(): no 5 string for home_Horst3180
+INFO May-22 09:14:57 no updateinfo available for home_Horst3180
+INFO May-22 09:14:57 using cached infinality-ultimate (0x62587a33219dbcaf6b420402ff453a6c8b545ce6c725ba92fa5510b30a267a41)
+INFO May-22 09:14:57 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-filenames.solvx
+ERROR May-22 09:14:57 load_ext(): no 2 string for infinality-ultimate
+INFO May-22 09:14:57 no presto metadata available for infinality-ultimate
+ERROR May-22 09:14:57 load_ext(): no 5 string for infinality-ultimate
+INFO May-22 09:14:57 no updateinfo available for infinality-ultimate
+INFO May-22 09:14:57 using cached infinality-ultimate-noarch (0x4f0443c750b817dc7ac3c4b5be75ef865be1097869ed97f2e88093b2c7d104f3)
+INFO May-22 09:14:57 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-noarch-filenames.solvx
+ERROR May-22 09:14:57 load_ext(): no 2 string for infinality-ultimate-noarch
+INFO May-22 09:14:57 no presto metadata available for infinality-ultimate-noarch
+ERROR May-22 09:14:57 load_ext(): no 5 string for infinality-ultimate-noarch
+INFO May-22 09:14:57 no updateinfo available for infinality-ultimate-noarch
+INFO May-22 09:14:57 using cached updates (0x39d629a05ec0511e30fcb90ee0d4a48992d8409cf2dbe552564778c189ecc006)
+INFO May-22 09:14:58 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-filenames.solvx
+INFO May-22 09:14:58 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-presto.solvx
+INFO May-22 09:14:58 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-updateinfo.solvx
+INFO May-22 09:14:58 using cached nodesource (0x15a9741fcaef5e6bccf8f8d0c0c1276ec54c9729d7bb877707c7b4c865259285)
+INFO May-22 09:14:58 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/nodesource-filenames.solvx
+ERROR May-22 09:14:58 load_ext(): no 2 string for nodesource
+INFO May-22 09:14:58 no presto metadata available for nodesource
+ERROR May-22 09:14:58 load_ext(): no 5 string for nodesource
+INFO May-22 09:14:58 no updateinfo available for nodesource
+INFO May-22 09:14:58 using cached rpmfusion-nonfree-updates-testing (0xd358f6629623c5f213d459d5944c00635da1baa1bd17d069e7e222fc0208693d)
+INFO May-22 09:14:58 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-updates-testing-filenames.solvx
+ERROR May-22 09:14:58 load_ext(): no 2 string for rpmfusion-nonfree-updates-testing
+INFO May-22 09:14:58 no presto metadata available for rpmfusion-nonfree-updates-testing
+ERROR May-22 09:14:58 load_ext(): no 5 string for rpmfusion-nonfree-updates-testing
+INFO May-22 09:14:58 no updateinfo available for rpmfusion-nonfree-updates-testing
+INFO May-22 09:14:58 using cached dyskette-gnome-320-i386 (0xfdf6038533daf21f5c63e72b5d5595f42afb885c765457097d67dad5c6043e02)
+INFO May-22 09:14:58 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-i386-filenames.solvx
+ERROR May-22 09:14:58 load_ext(): no 2 string for dyskette-gnome-320-i386
+INFO May-22 09:14:58 no presto metadata available for dyskette-gnome-320-i386
+ERROR May-22 09:14:58 load_ext(): no 5 string for dyskette-gnome-320-i386
+INFO May-22 09:14:58 no updateinfo available for dyskette-gnome-320-i386
+INFO May-22 09:14:58 using cached alunux-electric-vlsi (0x7f5e604e110bfe69f153fde5710aef1cbac6d19f1eded8b91111b9f168bb46a9)
+INFO May-22 09:14:58 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/alunux-electric-vlsi-filenames.solvx
+ERROR May-22 09:14:58 load_ext(): no 2 string for alunux-electric-vlsi
+INFO May-22 09:14:58 no presto metadata available for alunux-electric-vlsi
+ERROR May-22 09:14:58 load_ext(): no 5 string for alunux-electric-vlsi
+INFO May-22 09:14:58 no updateinfo available for alunux-electric-vlsi
+INFO May-22 09:14:58 using cached heikoada-terminix (0xa7028d908bcee617869da79ebb3f7b0dbc8b26899d6011d853fb32f0d74f501e)
+INFO May-22 09:14:58 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/heikoada-terminix-filenames.solvx
+ERROR May-22 09:14:58 load_ext(): no 2 string for heikoada-terminix
+INFO May-22 09:14:58 no presto metadata available for heikoada-terminix
+ERROR May-22 09:14:58 load_ext(): no 5 string for heikoada-terminix
+INFO May-22 09:14:58 no updateinfo available for heikoada-terminix
+INFO May-22 09:14:58 using cached rpmfusion-free (0x99cd6ec4f2ff8883cdeafe12f4366d8f259834c60166ca430a9e454eb6b318ba)
+INFO May-22 09:14:58 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-filenames.solvx
+ERROR May-22 09:14:58 load_ext(): no 2 string for rpmfusion-free
+INFO May-22 09:14:58 no presto metadata available for rpmfusion-free
+ERROR May-22 09:14:58 load_ext(): no 5 string for rpmfusion-free
+INFO May-22 09:14:58 no updateinfo available for rpmfusion-free
+INFO May-22 09:14:58 using cached insync (0xd9dd9cf79073d5245994d00c2571d553af5b8f60c0831bd139b23cf67d5bb6af)
+INFO May-22 09:14:58 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/insync-filenames.solvx
+ERROR May-22 09:14:58 load_ext(): no 2 string for insync
+INFO May-22 09:14:58 no presto metadata available for insync
+ERROR May-22 09:14:58 load_ext(): no 5 string for insync
+INFO May-22 09:14:58 no updateinfo available for insync
+INFO May-22 09:14:58 using cached rpmfusion-nonfree (0x08ff6c0e10e7c645a53f7c9cc455d2327b6ba3ec88816fdbf07cbb884f795093)
+INFO May-22 09:14:58 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-filenames.solvx
+ERROR May-22 09:14:58 load_ext(): no 2 string for rpmfusion-nonfree
+INFO May-22 09:14:58 no presto metadata available for rpmfusion-nonfree
+ERROR May-22 09:14:58 load_ext(): no 5 string for rpmfusion-nonfree
+INFO May-22 09:14:58 no updateinfo available for rpmfusion-nonfree
+INFO May-22 09:14:58 using cached rommon-telegram (0x93f1ac1197c3dba24d980298570ba679f0011a5d05067d6e8d9b5cfe6f0fab70)
+INFO May-22 09:14:58 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rommon-telegram-filenames.solvx
+ERROR May-22 09:14:58 load_ext(): no 2 string for rommon-telegram
+INFO May-22 09:14:58 no presto metadata available for rommon-telegram
+ERROR May-22 09:14:58 load_ext(): no 5 string for rommon-telegram
+INFO May-22 09:14:58 no updateinfo available for rommon-telegram
+INFO May-22 09:14:58 using cached dyskette-gnome-320-x86_64 (0xec0f3f16b51c15760ae5829846ea5cdb8536e394282463bee87810c15fa1699a)
+INFO May-22 09:14:58 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-x86_64-filenames.solvx
+ERROR May-22 09:14:58 load_ext(): no 2 string for dyskette-gnome-320-x86_64
+INFO May-22 09:14:58 no presto metadata available for dyskette-gnome-320-x86_64
+ERROR May-22 09:14:58 load_ext(): no 5 string for dyskette-gnome-320-x86_64
+INFO May-22 09:14:58 no updateinfo available for dyskette-gnome-320-x86_64
+INFO May-22 09:14:58 rewriting repo: @System
+INFO May-22 09:14:58 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 09:15:01 Started hawkey-0.6.2.
+INFO May-22 09:15:01 Architecture is: x86_64
+INFO May-22 09:15:01 fetching rpmdb
+INFO May-22 09:15:01 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 09:15:02 using cached rpmfusion-nonfree (0x08ff6c0e10e7c645a53f7c9cc455d2327b6ba3ec88816fdbf07cbb884f795093)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for rpmfusion-nonfree
+INFO May-22 09:15:02 no presto metadata available for rpmfusion-nonfree
+ERROR May-22 09:15:02 load_ext(): no 5 string for rpmfusion-nonfree
+INFO May-22 09:15:02 no updateinfo available for rpmfusion-nonfree
+INFO May-22 09:15:02 using cached churchyard-chromium-russianfedora (0xae8f5c1a3ad48216cdb9f625793e95f526ddf1d722c5684e1a82b4915f5abe72)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/churchyard-chromium-russianfedora-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for churchyard-chromium-russianfedora
+INFO May-22 09:15:02 no presto metadata available for churchyard-chromium-russianfedora
+ERROR May-22 09:15:02 load_ext(): no 5 string for churchyard-chromium-russianfedora
+INFO May-22 09:15:02 no updateinfo available for churchyard-chromium-russianfedora
+INFO May-22 09:15:02 using cached fedora (0x0c2ba40111c8817b2aff89b0487d6aeac87c38083b39ce3ba017e644449d7ade)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/fedora-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for fedora
+INFO May-22 09:15:02 no presto metadata available for fedora
+ERROR May-22 09:15:02 load_ext(): no 5 string for fedora
+INFO May-22 09:15:02 no updateinfo available for fedora
+INFO May-22 09:15:02 using cached alunux-zeal (0xb2922d2b5f5bd4e8815b9bbed62f3a69b16163e13ac918ebf971dd5c40777b19)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/alunux-zeal-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for alunux-zeal
+INFO May-22 09:15:02 no presto metadata available for alunux-zeal
+ERROR May-22 09:15:02 load_ext(): no 5 string for alunux-zeal
+INFO May-22 09:15:02 no updateinfo available for alunux-zeal
+INFO May-22 09:15:02 using cached infinality-ultimate (0x62587a33219dbcaf6b420402ff453a6c8b545ce6c725ba92fa5510b30a267a41)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for infinality-ultimate
+INFO May-22 09:15:02 no presto metadata available for infinality-ultimate
+ERROR May-22 09:15:02 load_ext(): no 5 string for infinality-ultimate
+INFO May-22 09:15:02 no updateinfo available for infinality-ultimate
+INFO May-22 09:15:02 using cached rpmfusion-free-updates-testing (0x1bf11d3d30f736cf35e387dc75ffc0652db756df95fbf42f53b4bcbb1f1fe0df)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-updates-testing-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for rpmfusion-free-updates-testing
+INFO May-22 09:15:02 no presto metadata available for rpmfusion-free-updates-testing
+ERROR May-22 09:15:02 load_ext(): no 5 string for rpmfusion-free-updates-testing
+INFO May-22 09:15:02 no updateinfo available for rpmfusion-free-updates-testing
+INFO May-22 09:15:02 using cached infinality-ultimate-noarch (0x4f0443c750b817dc7ac3c4b5be75ef865be1097869ed97f2e88093b2c7d104f3)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-noarch-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for infinality-ultimate-noarch
+INFO May-22 09:15:02 no presto metadata available for infinality-ultimate-noarch
+ERROR May-22 09:15:02 load_ext(): no 5 string for infinality-ultimate-noarch
+INFO May-22 09:15:02 no updateinfo available for infinality-ultimate-noarch
+INFO May-22 09:15:02 using cached home_Horst3180 (0x45f2d30e89ca3a850b96a0b29c6e9ea31fe0064059968eb40189caee8e8624a7)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/home_Horst3180-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for home_Horst3180
+INFO May-22 09:15:02 no presto metadata available for home_Horst3180
+ERROR May-22 09:15:02 load_ext(): no 5 string for home_Horst3180
+INFO May-22 09:15:02 no updateinfo available for home_Horst3180
+INFO May-22 09:15:02 using cached heikoada-terminix (0xa7028d908bcee617869da79ebb3f7b0dbc8b26899d6011d853fb32f0d74f501e)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/heikoada-terminix-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for heikoada-terminix
+INFO May-22 09:15:02 no presto metadata available for heikoada-terminix
+ERROR May-22 09:15:02 load_ext(): no 5 string for heikoada-terminix
+INFO May-22 09:15:02 no updateinfo available for heikoada-terminix
+INFO May-22 09:15:02 using cached rommon-telegram (0x93f1ac1197c3dba24d980298570ba679f0011a5d05067d6e8d9b5cfe6f0fab70)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rommon-telegram-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for rommon-telegram
+INFO May-22 09:15:02 no presto metadata available for rommon-telegram
+ERROR May-22 09:15:02 load_ext(): no 5 string for rommon-telegram
+INFO May-22 09:15:02 no updateinfo available for rommon-telegram
+INFO May-22 09:15:02 using cached dyskette-gnome-320-i386 (0xfdf6038533daf21f5c63e72b5d5595f42afb885c765457097d67dad5c6043e02)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-i386-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for dyskette-gnome-320-i386
+INFO May-22 09:15:02 no presto metadata available for dyskette-gnome-320-i386
+ERROR May-22 09:15:02 load_ext(): no 5 string for dyskette-gnome-320-i386
+INFO May-22 09:15:02 no updateinfo available for dyskette-gnome-320-i386
+INFO May-22 09:15:02 using cached nodesource (0x15a9741fcaef5e6bccf8f8d0c0c1276ec54c9729d7bb877707c7b4c865259285)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/nodesource-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for nodesource
+INFO May-22 09:15:02 no presto metadata available for nodesource
+ERROR May-22 09:15:02 load_ext(): no 5 string for nodesource
+INFO May-22 09:15:02 no updateinfo available for nodesource
+INFO May-22 09:15:02 using cached virtualbox (0xf9a182718ca3867120b0ba5102c0bc96c6e044a4a9e380a10e1b7cd4b5a064a5)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/virtualbox-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for virtualbox
+INFO May-22 09:15:02 no presto metadata available for virtualbox
+ERROR May-22 09:15:02 load_ext(): no 5 string for virtualbox
+INFO May-22 09:15:02 no updateinfo available for virtualbox
+INFO May-22 09:15:02 using cached alunux-electric-vlsi (0x7f5e604e110bfe69f153fde5710aef1cbac6d19f1eded8b91111b9f168bb46a9)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/alunux-electric-vlsi-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for alunux-electric-vlsi
+INFO May-22 09:15:02 no presto metadata available for alunux-electric-vlsi
+ERROR May-22 09:15:02 load_ext(): no 5 string for alunux-electric-vlsi
+INFO May-22 09:15:02 no updateinfo available for alunux-electric-vlsi
+INFO May-22 09:15:02 using cached dyskette-gnome-320-x86_64 (0xec0f3f16b51c15760ae5829846ea5cdb8536e394282463bee87810c15fa1699a)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-x86_64-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for dyskette-gnome-320-x86_64
+INFO May-22 09:15:02 no presto metadata available for dyskette-gnome-320-x86_64
+ERROR May-22 09:15:02 load_ext(): no 5 string for dyskette-gnome-320-x86_64
+INFO May-22 09:15:02 no updateinfo available for dyskette-gnome-320-x86_64
+INFO May-22 09:15:02 using cached rpmfusion-nonfree-updates-testing (0xd358f6629623c5f213d459d5944c00635da1baa1bd17d069e7e222fc0208693d)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-updates-testing-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for rpmfusion-nonfree-updates-testing
+INFO May-22 09:15:02 no presto metadata available for rpmfusion-nonfree-updates-testing
+ERROR May-22 09:15:02 load_ext(): no 5 string for rpmfusion-nonfree-updates-testing
+INFO May-22 09:15:02 no updateinfo available for rpmfusion-nonfree-updates-testing
+INFO May-22 09:15:02 using cached updates (0x39d629a05ec0511e30fcb90ee0d4a48992d8409cf2dbe552564778c189ecc006)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-filenames.solvx
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-presto.solvx
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/updates-updateinfo.solvx
+INFO May-22 09:15:02 using cached rpmfusion-free (0x99cd6ec4f2ff8883cdeafe12f4366d8f259834c60166ca430a9e454eb6b318ba)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for rpmfusion-free
+INFO May-22 09:15:02 no presto metadata available for rpmfusion-free
+ERROR May-22 09:15:02 load_ext(): no 5 string for rpmfusion-free
+INFO May-22 09:15:02 no updateinfo available for rpmfusion-free
+INFO May-22 09:15:02 using cached insync (0xd9dd9cf79073d5245994d00c2571d553af5b8f60c0831bd139b23cf67d5bb6af)
+INFO May-22 09:15:02 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/insync-filenames.solvx
+ERROR May-22 09:15:02 load_ext(): no 2 string for insync
+INFO May-22 09:15:02 no presto metadata available for insync
+ERROR May-22 09:15:02 load_ext(): no 5 string for insync
+INFO May-22 09:15:02 no updateinfo available for insync
+INFO May-22 09:15:02 rewriting repo: @System
+INFO May-22 09:15:02 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 19:29:27 Started hawkey-0.6.2.
+INFO May-22 19:29:27 Architecture is: x86_64
+INFO May-22 19:29:27 fetching rpmdb
+INFO May-22 19:29:28 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 19:29:29 using cached infinality-ultimate-noarch (0x4f0443c750b817dc7ac3c4b5be75ef865be1097869ed97f2e88093b2c7d104f3)
+INFO May-22 19:29:29 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-noarch-filenames.solvx
+ERROR May-22 19:29:29 load_ext(): no 2 string for infinality-ultimate-noarch
+INFO May-22 19:29:29 no presto metadata available for infinality-ultimate-noarch
+ERROR May-22 19:29:29 load_ext(): no 5 string for infinality-ultimate-noarch
+INFO May-22 19:29:29 no updateinfo available for infinality-ultimate-noarch
+INFO May-22 19:29:29 using cached rpmfusion-free-updates-testing (0x1bf11d3d30f736cf35e387dc75ffc0652db756df95fbf42f53b4bcbb1f1fe0df)
+INFO May-22 19:29:29 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-updates-testing-filenames.solvx
+ERROR May-22 19:29:29 load_ext(): no 2 string for rpmfusion-free-updates-testing
+INFO May-22 19:29:29 no presto metadata available for rpmfusion-free-updates-testing
+ERROR May-22 19:29:29 load_ext(): no 5 string for rpmfusion-free-updates-testing
+INFO May-22 19:29:29 no updateinfo available for rpmfusion-free-updates-testing
+INFO May-22 19:29:29 using cached heikoada-terminix (0xa7028d908bcee617869da79ebb3f7b0dbc8b26899d6011d853fb32f0d74f501e)
+INFO May-22 19:29:29 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/heikoada-terminix-filenames.solvx
+ERROR May-22 19:29:29 load_ext(): no 2 string for heikoada-terminix
+INFO May-22 19:29:29 no presto metadata available for heikoada-terminix
+ERROR May-22 19:29:29 load_ext(): no 5 string for heikoada-terminix
+INFO May-22 19:29:29 no updateinfo available for heikoada-terminix
+INFO May-22 19:29:29 using cached nodesource (0x15a9741fcaef5e6bccf8f8d0c0c1276ec54c9729d7bb877707c7b4c865259285)
+INFO May-22 19:29:29 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/nodesource-filenames.solvx
+ERROR May-22 19:29:29 load_ext(): no 2 string for nodesource
+INFO May-22 19:29:29 no presto metadata available for nodesource
+ERROR May-22 19:29:29 load_ext(): no 5 string for nodesource
+INFO May-22 19:29:29 no updateinfo available for nodesource
+INFO May-22 19:29:29 using cached rommon-telegram (0x93f1ac1197c3dba24d980298570ba679f0011a5d05067d6e8d9b5cfe6f0fab70)
+INFO May-22 19:29:29 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rommon-telegram-filenames.solvx
+ERROR May-22 19:29:29 load_ext(): no 2 string for rommon-telegram
+INFO May-22 19:29:29 no presto metadata available for rommon-telegram
+ERROR May-22 19:29:29 load_ext(): no 5 string for rommon-telegram
+INFO May-22 19:29:29 no updateinfo available for rommon-telegram
+INFO May-22 19:29:29 using cached infinality-ultimate (0x62587a33219dbcaf6b420402ff453a6c8b545ce6c725ba92fa5510b30a267a41)
+INFO May-22 19:29:29 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/infinality-ultimate-filenames.solvx
+ERROR May-22 19:29:29 load_ext(): no 2 string for infinality-ultimate
+INFO May-22 19:29:29 no presto metadata available for infinality-ultimate
+ERROR May-22 19:29:29 load_ext(): no 5 string for infinality-ultimate
+INFO May-22 19:29:29 no updateinfo available for infinality-ultimate
+INFO May-22 19:29:29 using cached rpmfusion-free (0x99cd6ec4f2ff8883cdeafe12f4366d8f259834c60166ca430a9e454eb6b318ba)
+INFO May-22 19:29:29 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-free-filenames.solvx
+ERROR May-22 19:29:29 load_ext(): no 2 string for rpmfusion-free
+INFO May-22 19:29:29 no presto metadata available for rpmfusion-free
+ERROR May-22 19:29:29 load_ext(): no 5 string for rpmfusion-free
+INFO May-22 19:29:29 no updateinfo available for rpmfusion-free
+INFO May-22 19:29:29 using cached fedora (0x0c2ba40111c8817b2aff89b0487d6aeac87c38083b39ce3ba017e644449d7ade)
+INFO May-22 19:29:29 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/fedora-filenames.solvx
+ERROR May-22 19:29:29 load_ext(): no 2 string for fedora
+INFO May-22 19:29:29 no presto metadata available for fedora
+ERROR May-22 19:29:29 load_ext(): no 5 string for fedora
+INFO May-22 19:29:29 no updateinfo available for fedora
+INFO May-22 19:36:39 fetching updates
+INFO May-22 19:36:40 caching repo: updates (0xf3e7605b4965a53744e1566ec9c70e8909c15eb22acafb9122e1c3cb0a9b200e)
+INFO May-22 19:36:40 load_ext: loading: /var/tmp/dnf-alunux-mjoo87n9/updates-e042e478e0621ea6/repodata/7487f5b4dcc5a4acda4f0b2d02dcdaa4d54eb987402014e2a52b22e322a0c94f-filelists.xml.gz
+INFO May-22 19:36:44 write_ext: storing updates to: /var/tmp/dnf-alunux-mjoo87n9/updates-filenames.solvx.FV4ROQ
+INFO May-22 19:36:45 load_ext: loading: /var/tmp/dnf-alunux-mjoo87n9/updates-e042e478e0621ea6/repodata/77581b716614eaf900dc80f88f089b6ad0cde16a7e1025335997366a05b94b83-prestodelta.xml.xz
+INFO May-22 19:36:45 write_ext: storing updates to: /var/tmp/dnf-alunux-mjoo87n9/updates-presto.solvx.ewFpKf
+INFO May-22 19:36:46 load_ext: loading: /var/tmp/dnf-alunux-mjoo87n9/updates-e042e478e0621ea6/repodata/d349d84f06fff154ffc484edd17e191db17bd82c6f9c2185d11a510d184302c4-updateinfo.xml.xz
+INFO May-22 19:36:46 write_ext: storing updates to: /var/tmp/dnf-alunux-mjoo87n9/updates-updateinfo.solvx.YZlytG
+INFO May-22 19:36:46 using cached alunux-zeal (0xb2922d2b5f5bd4e8815b9bbed62f3a69b16163e13ac918ebf971dd5c40777b19)
+INFO May-22 19:36:46 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/alunux-zeal-filenames.solvx
+ERROR May-22 19:36:46 load_ext(): no 2 string for alunux-zeal
+INFO May-22 19:36:46 no presto metadata available for alunux-zeal
+ERROR May-22 19:36:46 load_ext(): no 5 string for alunux-zeal
+INFO May-22 19:36:46 no updateinfo available for alunux-zeal
+INFO May-22 19:36:46 using cached alunux-electric-vlsi (0x7f5e604e110bfe69f153fde5710aef1cbac6d19f1eded8b91111b9f168bb46a9)
+INFO May-22 19:36:46 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/alunux-electric-vlsi-filenames.solvx
+ERROR May-22 19:36:46 load_ext(): no 2 string for alunux-electric-vlsi
+INFO May-22 19:36:46 no presto metadata available for alunux-electric-vlsi
+ERROR May-22 19:36:46 load_ext(): no 5 string for alunux-electric-vlsi
+INFO May-22 19:36:46 no updateinfo available for alunux-electric-vlsi
+INFO May-22 19:36:46 using cached home_Horst3180 (0x45f2d30e89ca3a850b96a0b29c6e9ea31fe0064059968eb40189caee8e8624a7)
+INFO May-22 19:36:46 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/home_Horst3180-filenames.solvx
+ERROR May-22 19:36:46 load_ext(): no 2 string for home_Horst3180
+INFO May-22 19:36:46 no presto metadata available for home_Horst3180
+ERROR May-22 19:36:46 load_ext(): no 5 string for home_Horst3180
+INFO May-22 19:36:46 no updateinfo available for home_Horst3180
+INFO May-22 19:36:46 using cached dyskette-gnome-320-i386 (0xfdf6038533daf21f5c63e72b5d5595f42afb885c765457097d67dad5c6043e02)
+INFO May-22 19:36:46 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-i386-filenames.solvx
+ERROR May-22 19:36:46 load_ext(): no 2 string for dyskette-gnome-320-i386
+INFO May-22 19:36:46 no presto metadata available for dyskette-gnome-320-i386
+ERROR May-22 19:36:46 load_ext(): no 5 string for dyskette-gnome-320-i386
+INFO May-22 19:36:46 no updateinfo available for dyskette-gnome-320-i386
+INFO May-22 19:36:46 using cached rpmfusion-nonfree-updates-testing (0xd358f6629623c5f213d459d5944c00635da1baa1bd17d069e7e222fc0208693d)
+INFO May-22 19:36:46 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-updates-testing-filenames.solvx
+ERROR May-22 19:36:46 load_ext(): no 2 string for rpmfusion-nonfree-updates-testing
+INFO May-22 19:36:46 no presto metadata available for rpmfusion-nonfree-updates-testing
+ERROR May-22 19:36:46 load_ext(): no 5 string for rpmfusion-nonfree-updates-testing
+INFO May-22 19:36:46 no updateinfo available for rpmfusion-nonfree-updates-testing
+INFO May-22 19:36:46 using cached virtualbox (0xf9a182718ca3867120b0ba5102c0bc96c6e044a4a9e380a10e1b7cd4b5a064a5)
+INFO May-22 19:36:46 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/virtualbox-filenames.solvx
+ERROR May-22 19:36:46 load_ext(): no 2 string for virtualbox
+INFO May-22 19:36:46 no presto metadata available for virtualbox
+ERROR May-22 19:36:46 load_ext(): no 5 string for virtualbox
+INFO May-22 19:36:46 no updateinfo available for virtualbox
+INFO May-22 19:36:55 using cached insync (0xd9dd9cf79073d5245994d00c2571d553af5b8f60c0831bd139b23cf67d5bb6af)
+INFO May-22 19:36:55 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/insync-filenames.solvx
+ERROR May-22 19:36:55 load_ext(): no 2 string for insync
+INFO May-22 19:36:55 no presto metadata available for insync
+ERROR May-22 19:36:55 load_ext(): no 5 string for insync
+INFO May-22 19:36:55 no updateinfo available for insync
+INFO May-22 19:36:55 using cached rpmfusion-nonfree (0x08ff6c0e10e7c645a53f7c9cc455d2327b6ba3ec88816fdbf07cbb884f795093)
+INFO May-22 19:36:55 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/rpmfusion-nonfree-filenames.solvx
+ERROR May-22 19:36:55 load_ext(): no 2 string for rpmfusion-nonfree
+INFO May-22 19:36:55 no presto metadata available for rpmfusion-nonfree
+ERROR May-22 19:36:55 load_ext(): no 5 string for rpmfusion-nonfree
+INFO May-22 19:36:55 no updateinfo available for rpmfusion-nonfree
+INFO May-22 19:36:55 using cached churchyard-chromium-russianfedora (0xae8f5c1a3ad48216cdb9f625793e95f526ddf1d722c5684e1a82b4915f5abe72)
+INFO May-22 19:36:55 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/churchyard-chromium-russianfedora-filenames.solvx
+ERROR May-22 19:36:55 load_ext(): no 2 string for churchyard-chromium-russianfedora
+INFO May-22 19:36:55 no presto metadata available for churchyard-chromium-russianfedora
+ERROR May-22 19:36:55 load_ext(): no 5 string for churchyard-chromium-russianfedora
+INFO May-22 19:36:55 no updateinfo available for churchyard-chromium-russianfedora
+INFO May-22 19:36:55 using cached dyskette-gnome-320-x86_64 (0xec0f3f16b51c15760ae5829846ea5cdb8536e394282463bee87810c15fa1699a)
+INFO May-22 19:36:55 load_ext: using cache file: /var/tmp/dnf-alunux-mjoo87n9/dyskette-gnome-320-x86_64-filenames.solvx
+ERROR May-22 19:36:55 load_ext(): no 2 string for dyskette-gnome-320-x86_64
+INFO May-22 19:36:55 no presto metadata available for dyskette-gnome-320-x86_64
+ERROR May-22 19:36:55 load_ext(): no 5 string for dyskette-gnome-320-x86_64
+INFO May-22 19:36:55 no updateinfo available for dyskette-gnome-320-x86_64
+INFO May-22 19:36:55 rewriting repo: @System
+INFO May-22 19:36:55 caching repo: @System (0x3c03988b43f575fce666195efff3cfce4389abf869117d1169f69d6a88722d46)
+INFO May-22 19:36:55 rewriting repo: updates
+INFO May-22 19:36:55 caching repo: updates (0xf3e7605b4965a53744e1566ec9c70e8909c15eb22acafb9122e1c3cb0a9b200e)

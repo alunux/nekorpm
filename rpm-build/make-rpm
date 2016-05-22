@@ -1,0 +1,70 @@
+#!/bin/bash
+
+project_dir="/mnt/kuliah/Linux Programming/MyLabora/nekorpm"
+rpm_build_dir="/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build"
+rpm_gpg_key_dir="/mnt/kuliah/Linux Programming/MyLabora/nekorpm/RPM-GPG-KEY"
+rpmdb_dir="/mnt/kuliah/Linux Programming/MyLabora/nekorpm/installroot"
+functions_dir="/mnt/kuliah/Linux Programming/MyLabora/nekorpm/functions"
+build_temp="/tmp/nekorpm-rpm-build"
+
+rpmbuild_rpms="/home/alunux/rpmbuild/RPMS/noarch"
+rpmbuild_srpms="/home/alunux/rpmbuild/SRPMS"
+rpmbuild_spec="/home/alunux/rpmbuild/SPECS"
+rpmbuild_source="/home/alunux/rpmbuild/SOURCES"
+rpmbuild_build="/home/alunux/rpmbuild/BUILD"
+
+clean_build_temp ()
+{
+  rm -rf $build_temp
+  rm -rf $rpmbuild_build/$1-$2
+}
+
+build_rpm ()
+{
+  local name=$(rpmspec --query --qf "%{name}" "${rpm_build_dir}/$1.spec")
+  local ver=$(rpmspec --query --qf "%{version}" "${rpm_build_dir}/$1.spec")
+  local build_path="$build_temp/$name-$ver"
+  mkdir -p $build_path
+  cp "${project_dir}"/$name $build_path
+  cp "${rpmdb_dir}"/*.tar.xz $build_path
+  if [[ "$name" == "nekorpm" ]]; then
+    cp -r "${functions_dir}" $build_path
+    cp -r "${rpm_gpg_key_dir}" $build_path
+  fi
+  cd $build_temp
+  tar -cf - $name-$ver | xz -9e -c - > $name-$ver.tar.xz
+  mv $name-$ver.tar.xz $rpmbuild_source
+  cd -
+  cp "${rpm_build_dir}"/$name.spec $rpmbuild_spec
+  rpmbuild -ba $rpmbuild_spec/$name.spec
+  if [[ "$?" != 0 ]]; then
+    eval "$2="Gagal""
+    clean_build_temp
+  else
+    mv $rpmbuild_rpms/$name-$ver-*.rpm "${rpm_build_dir}/rpms"
+    mv $rpmbuild_srpms/$name-$ver-*.src.rpm "${rpm_build_dir}/srpms"
+    clean_build_temp $name-$ver
+    eval "$2="Sukses""
+  fi
+}
+
+build_info ()
+{
+  printf "\t %-15s [ %s ]\n" "$1" "$2"
+}
+
+main ()
+{
+  local build_status=""
+  clean_build_temp
+  printf "\n%s\n" "Membuild Project"
+  printf "%s\n" "================"
+  for i in $@
+  do
+    build_rpm $i build_status &> make-rpm-log.txt
+    build_info $i $build_status
+  done
+  printf "\n%s\n" "Log dapat dilihat di make-rpm-log.txt"
+}
+
+main nekorpm nekorpm-pack

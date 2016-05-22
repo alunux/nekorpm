@@ -9,12 +9,12 @@
 extract_package_all ()
 {
   if [[ "$1" = "ok" && "$3" = "ok" ]]; then
-    echo "Sedang melakukan pengekstrakan paket onerpm";
+    echo "Sedang melakukan pengekstrakan paket nekorpm";
     rm -rf $temp_repo;
     mkdir $temp_repo;
-    cp $2 $temp_repo/paket_onerpm;
+    cp $2 $temp_repo/paket_nekorpm.tar;
     cd $temp_repo;
-    tar -xzf $temp_repo/paket_onerpm;
+    tar -xzf $temp_repo/paket_nekorpm.tar;
     echo -e "Pengekstrakan selesai\n";
   fi
 }
@@ -23,7 +23,7 @@ ask_install_process_again ()
 {
   while true; do
     local back
-    read -p "Cari onerpm lain? [Y/n]: " back
+    read -p "Cari nekorpm lain? [Y/n]: " back
     case "$back" in
       [Yy]|"" )
         $1
@@ -45,6 +45,7 @@ install_process ()
   case "$next" in
     [Yy]|"" )
       local aplikasi=`grep -w Name $temp_repo/keterangan | awk '{ print $3 }'`
+      sudo rpm --import /usr/share/nekorpm/RPM-GPG-KEY/*
       sudo dnf --allowerasing --disablerepo=\* \
                --repofrompath $aplikasi,$temp_repo --enablerepo=$aplikasi \
                -y install $aplikasi \
