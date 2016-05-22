@@ -26,24 +26,27 @@ nekorpm-pack is a packager for .nekorpm package
 %install
 rm -rf ${RPM_BUILD_ROOT}
 mkdir -p ${RPM_BUILD_ROOT}/usr/bin
-mkdir -p ${RPM_BUILD_ROOT}/usr/share/%{name}/f23-mini-{x86,x86-64}/var/lib/rpm
+mkdir -p ${RPM_BUILD_ROOT}/usr/share/%{name}/f23-{i686,x86_64}/var/lib/rpm
 
 ls *.tar.xz | xargs -n1 tar -xf
 install -m 755 %{name} ${RPM_BUILD_ROOT}%{_bindir}
-install -m 644 f23-mini-x86/var/lib/rpm/* \
-        ${RPM_BUILD_ROOT}%{_datadir}/%{name}/f23-mini-x86/var/lib/rpm
-install -m 644 f23-mini-x86-64/var/lib/rpm/* \
-        ${RPM_BUILD_ROOT}%{_datadir}/%{name}/f23-mini-x86-64/var/lib/rpm
+install -m 644 f23-i686/var/lib/rpm/* \
+        ${RPM_BUILD_ROOT}%{_datadir}/%{name}/f23-i686/var/lib/rpm
+install -m 644 f23-x86_64/var/lib/rpm/* \
+        ${RPM_BUILD_ROOT}%{_datadir}/%{name}/f23-x86_64/var/lib/rpm
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
 
+%postun
+rm -rf %dir %{_datadir}/%{name}/
+
 %files
 %defattr(-,root,root)
 %attr(755,root,root) %{_bindir}/%{name}
-%dir %{_datadir}/%{name}/*
-%attr(644,root,root) %{_datadir}/%{name}/f23-mini-x86/var/lib/rpm/*
-%attr(644,root,root) %{_datadir}/%{name}/f23-mini-x86-64/var/lib/rpm/*
+%dir %{_datadir}/%{name}/
+%attr(644,root,root) %{_datadir}/%{name}/f23-i686/var/lib/rpm/*
+%attr(644,root,root) %{_datadir}/%{name}/f23-x86_64/var/lib/rpm/*
 
 %changelog
 * Sun May 22 2016 La Ode Muh. Fadlun Akbar <fadlun.net@gmail.com> - 1.3-1

@@ -97,7 +97,7 @@ main ()
 make_nekorpm ()
 {
   local releasever=$1
-  local rpmdb="/home/alunux/MyLabora/nekorpm/installroot/f$1-$arch"
+  local rpmdb="/usr/share/nekorpm-pack/f$1-$arch"
   local skip=""
   printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
   shift 2
