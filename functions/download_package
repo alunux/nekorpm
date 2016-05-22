@@ -2,7 +2,7 @@
 
 download_package ()
 {
-  local paket="$2-f$distro-*.nekorpm"
+  local paket="$2-f$4-*.nekorpm"
   mkdir -p $temp
   rpm --root=$3 -q $2 &> /dev/null
   if [ $? -ne 0 -a ! -e $paket ]; then

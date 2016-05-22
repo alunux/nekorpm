@@ -357,3 +357,1204 @@ Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.i0ABid
 + cd nekorpm-pack-1.3
 + rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
 + exit 0
+
+================================================================================
+Mon May 23 00:48:54 WIB 2016
+================================================================================
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.ll3CXl
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.Wf8wdh
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.Dr3Wuc
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions/
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ install -m 755 nekorpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ install -m 644 functions/check_location functions/check_package_corrupt functions/cleanup functions/download_package functions/install_process functions/package_info functions/packaging /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions
++ install -m 644 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-free-fedora-23 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-nonfree-fedora-23 /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-1.3-1.noarch
+Provides: nekorpm = 1.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.KAEBE8
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ exit 0
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.AZFL0l
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-pack-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-pack-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-pack-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.oi6XOo
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.gHBEEr
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ ls f23-i686.tar.xz f23-x86_64.tar.xz
++ xargs -n1 tar -xf
++ install -m 755 nekorpm-pack /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ install -m 644 f23-i686/var/lib/rpm/Basenames f23-i686/var/lib/rpm/Conflictname f23-i686/var/lib/rpm/Dirnames f23-i686/var/lib/rpm/Enhancename f23-i686/var/lib/rpm/Filetriggername f23-i686/var/lib/rpm/Group f23-i686/var/lib/rpm/Installtid f23-i686/var/lib/rpm/Name f23-i686/var/lib/rpm/Obsoletename f23-i686/var/lib/rpm/Packages f23-i686/var/lib/rpm/Providename f23-i686/var/lib/rpm/Recommendname f23-i686/var/lib/rpm/Requirename f23-i686/var/lib/rpm/Sha1header f23-i686/var/lib/rpm/Sigmd5 f23-i686/var/lib/rpm/Suggestname f23-i686/var/lib/rpm/Supplementname f23-i686/var/lib/rpm/Transfiletriggername f23-i686/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm
++ install -m 644 f23-x86_64/var/lib/rpm/Basenames f23-x86_64/var/lib/rpm/Conflictname f23-x86_64/var/lib/rpm/Dirnames f23-x86_64/var/lib/rpm/Enhancename f23-x86_64/var/lib/rpm/Filetriggername f23-x86_64/var/lib/rpm/Group f23-x86_64/var/lib/rpm/Installtid f23-x86_64/var/lib/rpm/Name f23-x86_64/var/lib/rpm/Obsoletename f23-x86_64/var/lib/rpm/Packages f23-x86_64/var/lib/rpm/Providename f23-x86_64/var/lib/rpm/Recommendname f23-x86_64/var/lib/rpm/Requirename f23-x86_64/var/lib/rpm/Sha1header f23-x86_64/var/lib/rpm/Sigmd5 f23-x86_64/var/lib/rpm/Suggestname f23-x86_64/var/lib/rpm/Supplementname f23-x86_64/var/lib/rpm/Transfiletriggername f23-x86_64/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-pack-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-pack-1.3-1.noarch
+error: Bad syntax: %attr(-)
+
+
+RPM build errors:
+    Bad syntax: %attr(-)
+
+================================================================================
+Mon May 23 00:50:35 WIB 2016
+================================================================================
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.LyAk4z
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.HudJeL
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.gvsnqW
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions/
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ install -m 755 nekorpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ install -m 644 functions/check_location functions/check_package_corrupt functions/cleanup functions/download_package functions/install_process functions/package_info functions/packaging /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions
++ install -m 644 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-free-fedora-23 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-nonfree-fedora-23 /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-1.3-1.noarch
+Provides: nekorpm = 1.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.BfnRo8
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ exit 0
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.4ujebw
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-pack-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-pack-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-pack-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.IJnRMO
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.kBiMp7
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ ls f23-i686.tar.xz f23-x86_64.tar.xz
++ xargs -n1 tar -xf
++ install -m 755 nekorpm-pack /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ install -m 644 f23-i686/var/lib/rpm/Basenames f23-i686/var/lib/rpm/Conflictname f23-i686/var/lib/rpm/Dirnames f23-i686/var/lib/rpm/Enhancename f23-i686/var/lib/rpm/Filetriggername f23-i686/var/lib/rpm/Group f23-i686/var/lib/rpm/Installtid f23-i686/var/lib/rpm/Name f23-i686/var/lib/rpm/Obsoletename f23-i686/var/lib/rpm/Packages f23-i686/var/lib/rpm/Providename f23-i686/var/lib/rpm/Recommendname f23-i686/var/lib/rpm/Requirename f23-i686/var/lib/rpm/Sha1header f23-i686/var/lib/rpm/Sigmd5 f23-i686/var/lib/rpm/Suggestname f23-i686/var/lib/rpm/Supplementname f23-i686/var/lib/rpm/Transfiletriggername f23-i686/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm
++ install -m 644 f23-x86_64/var/lib/rpm/Basenames f23-x86_64/var/lib/rpm/Conflictname f23-x86_64/var/lib/rpm/Dirnames f23-x86_64/var/lib/rpm/Enhancename f23-x86_64/var/lib/rpm/Filetriggername f23-x86_64/var/lib/rpm/Group f23-x86_64/var/lib/rpm/Installtid f23-x86_64/var/lib/rpm/Name f23-x86_64/var/lib/rpm/Obsoletename f23-x86_64/var/lib/rpm/Packages f23-x86_64/var/lib/rpm/Providename f23-x86_64/var/lib/rpm/Recommendname f23-x86_64/var/lib/rpm/Requirename f23-x86_64/var/lib/rpm/Sha1header f23-x86_64/var/lib/rpm/Sigmd5 f23-x86_64/var/lib/rpm/Suggestname f23-x86_64/var/lib/rpm/Supplementname f23-x86_64/var/lib/rpm/Transfiletriggername f23-x86_64/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-pack-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-pack-1.3-1.noarch
+Provides: nekorpm-pack = 1.3-1
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(postun): /bin/sh
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-pack-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-pack-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.ObvbgK
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ exit 0
+
+================================================================================
+Mon May 23 00:56:25 WIB 2016
+================================================================================
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.u16IAL
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.ITDzuI
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.X2mOpF
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions/
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ install -m 755 nekorpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ install -m 644 functions/check_location functions/check_package_corrupt functions/cleanup functions/download_package functions/install_process functions/package_info functions/packaging /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions
++ install -m 644 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-free-fedora-23 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-nonfree-fedora-23 /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-1.3-1.noarch
+Provides: nekorpm = 1.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.UIwV7C
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ exit 0
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.qL6AAE
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-pack-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-pack-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-pack-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.2XhvUI
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.fjBNfN
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ ls f23-i686.tar.xz f23-x86_64.tar.xz
++ xargs -n1 tar -xf
++ install -m 755 nekorpm-pack /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ install -m 644 f23-i686/var/lib/rpm/Basenames f23-i686/var/lib/rpm/Conflictname f23-i686/var/lib/rpm/Dirnames f23-i686/var/lib/rpm/Enhancename f23-i686/var/lib/rpm/Filetriggername f23-i686/var/lib/rpm/Group f23-i686/var/lib/rpm/Installtid f23-i686/var/lib/rpm/Name f23-i686/var/lib/rpm/Obsoletename f23-i686/var/lib/rpm/Packages f23-i686/var/lib/rpm/Providename f23-i686/var/lib/rpm/Recommendname f23-i686/var/lib/rpm/Requirename f23-i686/var/lib/rpm/Sha1header f23-i686/var/lib/rpm/Sigmd5 f23-i686/var/lib/rpm/Suggestname f23-i686/var/lib/rpm/Supplementname f23-i686/var/lib/rpm/Transfiletriggername f23-i686/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm
++ install -m 644 f23-x86_64/var/lib/rpm/Basenames f23-x86_64/var/lib/rpm/Conflictname f23-x86_64/var/lib/rpm/Dirnames f23-x86_64/var/lib/rpm/Enhancename f23-x86_64/var/lib/rpm/Filetriggername f23-x86_64/var/lib/rpm/Group f23-x86_64/var/lib/rpm/Installtid f23-x86_64/var/lib/rpm/Name f23-x86_64/var/lib/rpm/Obsoletename f23-x86_64/var/lib/rpm/Packages f23-x86_64/var/lib/rpm/Providename f23-x86_64/var/lib/rpm/Recommendname f23-x86_64/var/lib/rpm/Requirename f23-x86_64/var/lib/rpm/Sha1header f23-x86_64/var/lib/rpm/Sigmd5 f23-x86_64/var/lib/rpm/Suggestname f23-x86_64/var/lib/rpm/Supplementname f23-x86_64/var/lib/rpm/Transfiletriggername f23-x86_64/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-pack-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-pack-1.3-1.noarch
+Provides: nekorpm-pack = 1.3-1
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(postun): /bin/sh
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-pack-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-pack-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.Y3M9Ub
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ exit 0
+
+================================================================================
+Mon May 23 01:00:44 WIB 2016
+================================================================================
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.Ec1QQ9
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.LNtWY2
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.NaPx8V
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions/
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ install -m 755 nekorpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ install -m 644 functions/check_location functions/check_package_corrupt functions/cleanup functions/download_package functions/install_process functions/package_info functions/packaging /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions
++ install -m 644 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-free-fedora-23 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-nonfree-fedora-23 /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-1.3-1.noarch
+Provides: nekorpm = 1.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.qIHS3P
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ exit 0
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.F1VbXb
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-pack-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-pack-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-pack-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.kacYyc
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.yhR9bd
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ ls f23-i686.tar.xz f23-x86_64.tar.xz
++ xargs -n1 tar -xf
++ install -m 755 nekorpm-pack /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ install -m 644 f23-i686/var/lib/rpm/Basenames f23-i686/var/lib/rpm/Conflictname f23-i686/var/lib/rpm/Dirnames f23-i686/var/lib/rpm/Enhancename f23-i686/var/lib/rpm/Filetriggername f23-i686/var/lib/rpm/Group f23-i686/var/lib/rpm/Installtid f23-i686/var/lib/rpm/Name f23-i686/var/lib/rpm/Obsoletename f23-i686/var/lib/rpm/Packages f23-i686/var/lib/rpm/Providename f23-i686/var/lib/rpm/Recommendname f23-i686/var/lib/rpm/Requirename f23-i686/var/lib/rpm/Sha1header f23-i686/var/lib/rpm/Sigmd5 f23-i686/var/lib/rpm/Suggestname f23-i686/var/lib/rpm/Supplementname f23-i686/var/lib/rpm/Transfiletriggername f23-i686/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm
++ install -m 644 f23-x86_64/var/lib/rpm/Basenames f23-x86_64/var/lib/rpm/Conflictname f23-x86_64/var/lib/rpm/Dirnames f23-x86_64/var/lib/rpm/Enhancename f23-x86_64/var/lib/rpm/Filetriggername f23-x86_64/var/lib/rpm/Group f23-x86_64/var/lib/rpm/Installtid f23-x86_64/var/lib/rpm/Name f23-x86_64/var/lib/rpm/Obsoletename f23-x86_64/var/lib/rpm/Packages f23-x86_64/var/lib/rpm/Providename f23-x86_64/var/lib/rpm/Recommendname f23-x86_64/var/lib/rpm/Requirename f23-x86_64/var/lib/rpm/Sha1header f23-x86_64/var/lib/rpm/Sigmd5 f23-x86_64/var/lib/rpm/Suggestname f23-x86_64/var/lib/rpm/Supplementname f23-x86_64/var/lib/rpm/Transfiletriggername f23-x86_64/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-pack-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-pack-1.3-1.noarch
+Provides: nekorpm-pack = 1.3-1
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(postun): /bin/sh
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-pack-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-pack-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.AEV3Sx
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ exit 0
+
+================================================================================
+Mon May 23 01:33:57 WIB 2016
+================================================================================
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.CQWD4q
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.8VAL2l
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.6Dys2g
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions/
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ install -m 755 nekorpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ install -m 644 functions/check_location functions/check_package_corrupt functions/cleanup functions/download_package functions/install_process functions/package_info functions/packaging /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions
++ install -m 644 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-free-fedora-23 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-nonfree-fedora-23 /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-1.3-1.noarch
+Provides: nekorpm = 1.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.qNK7Ke
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ exit 0
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.7HehKN
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-pack-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-pack-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-pack-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.SwAiFT
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.rnoWBZ
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ xargs -n1 tar -xf
++ ls f23-i686.tar.xz f23-x86_64.tar.xz
++ install -m 755 nekorpm-pack /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ install -m 644 f23-i686/var/lib/rpm/Basenames f23-i686/var/lib/rpm/Conflictname f23-i686/var/lib/rpm/Dirnames f23-i686/var/lib/rpm/Enhancename f23-i686/var/lib/rpm/Filetriggername f23-i686/var/lib/rpm/Group f23-i686/var/lib/rpm/Installtid f23-i686/var/lib/rpm/Name f23-i686/var/lib/rpm/Obsoletename f23-i686/var/lib/rpm/Packages f23-i686/var/lib/rpm/Providename f23-i686/var/lib/rpm/Recommendname f23-i686/var/lib/rpm/Requirename f23-i686/var/lib/rpm/Sha1header f23-i686/var/lib/rpm/Sigmd5 f23-i686/var/lib/rpm/Suggestname f23-i686/var/lib/rpm/Supplementname f23-i686/var/lib/rpm/Transfiletriggername f23-i686/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm
++ install -m 644 f23-x86_64/var/lib/rpm/Basenames f23-x86_64/var/lib/rpm/Conflictname f23-x86_64/var/lib/rpm/Dirnames f23-x86_64/var/lib/rpm/Enhancename f23-x86_64/var/lib/rpm/Filetriggername f23-x86_64/var/lib/rpm/Group f23-x86_64/var/lib/rpm/Installtid f23-x86_64/var/lib/rpm/Name f23-x86_64/var/lib/rpm/Obsoletename f23-x86_64/var/lib/rpm/Packages f23-x86_64/var/lib/rpm/Providename f23-x86_64/var/lib/rpm/Recommendname f23-x86_64/var/lib/rpm/Requirename f23-x86_64/var/lib/rpm/Sha1header f23-x86_64/var/lib/rpm/Sigmd5 f23-x86_64/var/lib/rpm/Suggestname f23-x86_64/var/lib/rpm/Supplementname f23-x86_64/var/lib/rpm/Transfiletriggername f23-x86_64/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-pack-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-pack-1.3-1.noarch
+Provides: nekorpm-pack = 1.3-1
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(postun): /bin/sh
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-pack-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-pack-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.BlheKq
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ exit 0
+
+================================================================================
+Mon May 23 01:36:52 WIB 2016
+================================================================================
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.37owkO
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.qGI923
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.aBS0Mj
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions/
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ install -m 755 nekorpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ install -m 644 functions/check_location functions/check_package_corrupt functions/cleanup functions/download_package functions/install_process functions/package_info functions/packaging /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions
++ install -m 644 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-free-fedora-23 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-nonfree-fedora-23 /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-1.3-1.noarch
+Provides: nekorpm = 1.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.bQbWjA
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ exit 0
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.Xru2GS
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-pack-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-pack-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-pack-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.CIA3ig
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.OprkWD
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ ls f23-i686.tar.xz f23-x86_64.tar.xz
++ xargs -n1 tar -xf
++ install -m 755 nekorpm-pack /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ install -m 644 f23-i686/var/lib/rpm/Basenames f23-i686/var/lib/rpm/Conflictname f23-i686/var/lib/rpm/Dirnames f23-i686/var/lib/rpm/Enhancename f23-i686/var/lib/rpm/Filetriggername f23-i686/var/lib/rpm/Group f23-i686/var/lib/rpm/Installtid f23-i686/var/lib/rpm/Name f23-i686/var/lib/rpm/Obsoletename f23-i686/var/lib/rpm/Packages f23-i686/var/lib/rpm/Providename f23-i686/var/lib/rpm/Recommendname f23-i686/var/lib/rpm/Requirename f23-i686/var/lib/rpm/Sha1header f23-i686/var/lib/rpm/Sigmd5 f23-i686/var/lib/rpm/Suggestname f23-i686/var/lib/rpm/Supplementname f23-i686/var/lib/rpm/Transfiletriggername f23-i686/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm
++ install -m 644 f23-x86_64/var/lib/rpm/Basenames f23-x86_64/var/lib/rpm/Conflictname f23-x86_64/var/lib/rpm/Dirnames f23-x86_64/var/lib/rpm/Enhancename f23-x86_64/var/lib/rpm/Filetriggername f23-x86_64/var/lib/rpm/Group f23-x86_64/var/lib/rpm/Installtid f23-x86_64/var/lib/rpm/Name f23-x86_64/var/lib/rpm/Obsoletename f23-x86_64/var/lib/rpm/Packages f23-x86_64/var/lib/rpm/Providename f23-x86_64/var/lib/rpm/Recommendname f23-x86_64/var/lib/rpm/Requirename f23-x86_64/var/lib/rpm/Sha1header f23-x86_64/var/lib/rpm/Sigmd5 f23-x86_64/var/lib/rpm/Suggestname f23-x86_64/var/lib/rpm/Supplementname f23-x86_64/var/lib/rpm/Transfiletriggername f23-x86_64/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-pack-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-pack-1.3-1.noarch
+Provides: nekorpm-pack = 1.3-1
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(postun): /bin/sh
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-pack-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-pack-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.qn14Hn
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ exit 0
+
+================================================================================
+Mon May 23 01:40:03 WIB 2016
+================================================================================
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.dt5otL
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.o2yD63
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.glO7Km
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions/
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ install -m 755 nekorpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ install -m 644 functions/check_location functions/check_package_corrupt functions/cleanup functions/download_package functions/install_process functions/package_info functions/packaging /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions
++ install -m 644 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-free-fedora-23 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-nonfree-fedora-23 /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-1.3-1.noarch
+Provides: nekorpm = 1.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.ZcLtaG
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ exit 0
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.m8BohI
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-pack-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-pack-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-pack-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.KbYOB8
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.RZpEXy
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ ls f23-i686.tar.xz f23-x86_64.tar.xz
++ xargs -n1 tar -xf
++ install -m 755 nekorpm-pack /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ install -m 644 f23-i686/var/lib/rpm/Basenames f23-i686/var/lib/rpm/Conflictname f23-i686/var/lib/rpm/Dirnames f23-i686/var/lib/rpm/Enhancename f23-i686/var/lib/rpm/Filetriggername f23-i686/var/lib/rpm/Group f23-i686/var/lib/rpm/Installtid f23-i686/var/lib/rpm/Name f23-i686/var/lib/rpm/Obsoletename f23-i686/var/lib/rpm/Packages f23-i686/var/lib/rpm/Providename f23-i686/var/lib/rpm/Recommendname f23-i686/var/lib/rpm/Requirename f23-i686/var/lib/rpm/Sha1header f23-i686/var/lib/rpm/Sigmd5 f23-i686/var/lib/rpm/Suggestname f23-i686/var/lib/rpm/Supplementname f23-i686/var/lib/rpm/Transfiletriggername f23-i686/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm
++ install -m 644 f23-x86_64/var/lib/rpm/Basenames f23-x86_64/var/lib/rpm/Conflictname f23-x86_64/var/lib/rpm/Dirnames f23-x86_64/var/lib/rpm/Enhancename f23-x86_64/var/lib/rpm/Filetriggername f23-x86_64/var/lib/rpm/Group f23-x86_64/var/lib/rpm/Installtid f23-x86_64/var/lib/rpm/Name f23-x86_64/var/lib/rpm/Obsoletename f23-x86_64/var/lib/rpm/Packages f23-x86_64/var/lib/rpm/Providename f23-x86_64/var/lib/rpm/Recommendname f23-x86_64/var/lib/rpm/Requirename f23-x86_64/var/lib/rpm/Sha1header f23-x86_64/var/lib/rpm/Sigmd5 f23-x86_64/var/lib/rpm/Suggestname f23-x86_64/var/lib/rpm/Supplementname f23-x86_64/var/lib/rpm/Transfiletriggername f23-x86_64/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-pack-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-pack-1.3-1.noarch
+Provides: nekorpm-pack = 1.3-1
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(postun): /bin/sh
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-pack-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-pack-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.xDsGim
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ exit 0
+
+================================================================================
+Mon May 23 01:42:51 WIB 2016
+================================================================================
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.zHGsE6
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.sFhjYu
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.zPpkjT
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions/
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ install -m 755 nekorpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ install -m 644 functions/check_location functions/check_package_corrupt functions/cleanup functions/download_package functions/install_process functions/package_info functions/packaging /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions
++ install -m 644 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-free-fedora-23 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-nonfree-fedora-23 /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-1.3-1.noarch
+Provides: nekorpm = 1.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.XmvYti
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ exit 0
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.nLUKL6
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-pack-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-pack-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-pack-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.YcmQSC
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.fUGt18
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ ls f23-i686.tar.xz f23-x86_64.tar.xz
++ xargs -n1 tar -xf
++ install -m 755 nekorpm-pack /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ install -m 644 f23-i686/var/lib/rpm/Basenames f23-i686/var/lib/rpm/Conflictname f23-i686/var/lib/rpm/Dirnames f23-i686/var/lib/rpm/Enhancename f23-i686/var/lib/rpm/Filetriggername f23-i686/var/lib/rpm/Group f23-i686/var/lib/rpm/Installtid f23-i686/var/lib/rpm/Name f23-i686/var/lib/rpm/Obsoletename f23-i686/var/lib/rpm/Packages f23-i686/var/lib/rpm/Providename f23-i686/var/lib/rpm/Recommendname f23-i686/var/lib/rpm/Requirename f23-i686/var/lib/rpm/Sha1header f23-i686/var/lib/rpm/Sigmd5 f23-i686/var/lib/rpm/Suggestname f23-i686/var/lib/rpm/Supplementname f23-i686/var/lib/rpm/Transfiletriggername f23-i686/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm
++ install -m 644 f23-x86_64/var/lib/rpm/Basenames f23-x86_64/var/lib/rpm/Conflictname f23-x86_64/var/lib/rpm/Dirnames f23-x86_64/var/lib/rpm/Enhancename f23-x86_64/var/lib/rpm/Filetriggername f23-x86_64/var/lib/rpm/Group f23-x86_64/var/lib/rpm/Installtid f23-x86_64/var/lib/rpm/Name f23-x86_64/var/lib/rpm/Obsoletename f23-x86_64/var/lib/rpm/Packages f23-x86_64/var/lib/rpm/Providename f23-x86_64/var/lib/rpm/Recommendname f23-x86_64/var/lib/rpm/Requirename f23-x86_64/var/lib/rpm/Sha1header f23-x86_64/var/lib/rpm/Sigmd5 f23-x86_64/var/lib/rpm/Suggestname f23-x86_64/var/lib/rpm/Supplementname f23-x86_64/var/lib/rpm/Transfiletriggername f23-x86_64/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-pack-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-pack-1.3-1.noarch
+Provides: nekorpm-pack = 1.3-1
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(postun): /bin/sh
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-pack-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-pack-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.akQgf1
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ exit 0
+
+================================================================================
+Mon May 23 01:44:12 WIB 2016
+================================================================================
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.ENaF5j
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.6bUSG7
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.MLBxjV
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions/
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ install -m 755 nekorpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ install -m 644 functions/check_location functions/check_package_corrupt functions/cleanup functions/download_package functions/install_process functions/package_info functions/packaging /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions
++ install -m 644 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-free-fedora-23 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-nonfree-fedora-23 /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-1.3-1.noarch
+Provides: nekorpm = 1.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.17WiKJ
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ exit 0
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.szsuYf
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-pack-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-pack-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-pack-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.awbC4a
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.LLa0b6
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ ls f23-i686.tar.xz f23-x86_64.tar.xz
++ xargs -n1 tar -xf
++ install -m 755 nekorpm-pack /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ install -m 644 f23-i686/var/lib/rpm/Basenames f23-i686/var/lib/rpm/Conflictname f23-i686/var/lib/rpm/Dirnames f23-i686/var/lib/rpm/Enhancename f23-i686/var/lib/rpm/Filetriggername f23-i686/var/lib/rpm/Group f23-i686/var/lib/rpm/Installtid f23-i686/var/lib/rpm/Name f23-i686/var/lib/rpm/Obsoletename f23-i686/var/lib/rpm/Packages f23-i686/var/lib/rpm/Providename f23-i686/var/lib/rpm/Recommendname f23-i686/var/lib/rpm/Requirename f23-i686/var/lib/rpm/Sha1header f23-i686/var/lib/rpm/Sigmd5 f23-i686/var/lib/rpm/Suggestname f23-i686/var/lib/rpm/Supplementname f23-i686/var/lib/rpm/Transfiletriggername f23-i686/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm
++ install -m 644 f23-x86_64/var/lib/rpm/Basenames f23-x86_64/var/lib/rpm/Conflictname f23-x86_64/var/lib/rpm/Dirnames f23-x86_64/var/lib/rpm/Enhancename f23-x86_64/var/lib/rpm/Filetriggername f23-x86_64/var/lib/rpm/Group f23-x86_64/var/lib/rpm/Installtid f23-x86_64/var/lib/rpm/Name f23-x86_64/var/lib/rpm/Obsoletename f23-x86_64/var/lib/rpm/Packages f23-x86_64/var/lib/rpm/Providename f23-x86_64/var/lib/rpm/Recommendname f23-x86_64/var/lib/rpm/Requirename f23-x86_64/var/lib/rpm/Sha1header f23-x86_64/var/lib/rpm/Sigmd5 f23-x86_64/var/lib/rpm/Suggestname f23-x86_64/var/lib/rpm/Supplementname f23-x86_64/var/lib/rpm/Transfiletriggername f23-x86_64/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-pack-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-pack-1.3-1.noarch
+Provides: nekorpm-pack = 1.3-1
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(postun): /bin/sh
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-pack-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-pack-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.wyEvqm
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ exit 0
+
+================================================================================
+Mon May 23 01:48:23 WIB 2016
+================================================================================
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.yrvlsJ
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.w15eS8
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.KLqpjy
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions/
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ install -m 755 nekorpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/bin
++ install -m 644 functions/check_location functions/check_package_corrupt functions/cleanup functions/download_package functions/install_process functions/package_info functions/packaging /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/functions
++ install -m 644 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-free-fedora-23 RPM-GPG-KEY/RPM-GPG-KEY-rpmfusion-nonfree-fedora-23 /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64/usr/share/nekorpm/RPM-GPG-KEY/
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-1.3-1.noarch
+Provides: nekorpm = 1.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.i44gwY
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-1.3-1.x86_64
++ exit 0
+/mnt/kuliah/Linux Programming/MyLabora/nekorpm/rpm-build
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.iE1UPz
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd /home/alunux/rpmbuild/BUILD
++ rm -rf nekorpm-pack-1.3
++ /usr/bin/xz -dc /home/alunux/rpmbuild/SOURCES/nekorpm-pack-1.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nekorpm-pack-1.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.TJzjF6
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.5eyZvD
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ '[' /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64 '!=' / ']'
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+++ dirname /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT
++ mkdir /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ mkdir -p /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ ls f23-i686.tar.xz f23-x86_64.tar.xz
++ xargs -n1 tar -xf
++ install -m 755 nekorpm-pack /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/bin
++ install -m 644 f23-i686/var/lib/rpm/Basenames f23-i686/var/lib/rpm/Conflictname f23-i686/var/lib/rpm/Dirnames f23-i686/var/lib/rpm/Enhancename f23-i686/var/lib/rpm/Filetriggername f23-i686/var/lib/rpm/Group f23-i686/var/lib/rpm/Installtid f23-i686/var/lib/rpm/Name f23-i686/var/lib/rpm/Obsoletename f23-i686/var/lib/rpm/Packages f23-i686/var/lib/rpm/Providename f23-i686/var/lib/rpm/Recommendname f23-i686/var/lib/rpm/Requirename f23-i686/var/lib/rpm/Sha1header f23-i686/var/lib/rpm/Sigmd5 f23-i686/var/lib/rpm/Suggestname f23-i686/var/lib/rpm/Supplementname f23-i686/var/lib/rpm/Transfiletriggername f23-i686/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-i686/var/lib/rpm
++ install -m 644 f23-x86_64/var/lib/rpm/Basenames f23-x86_64/var/lib/rpm/Conflictname f23-x86_64/var/lib/rpm/Dirnames f23-x86_64/var/lib/rpm/Enhancename f23-x86_64/var/lib/rpm/Filetriggername f23-x86_64/var/lib/rpm/Group f23-x86_64/var/lib/rpm/Installtid f23-x86_64/var/lib/rpm/Name f23-x86_64/var/lib/rpm/Obsoletename f23-x86_64/var/lib/rpm/Packages f23-x86_64/var/lib/rpm/Providename f23-x86_64/var/lib/rpm/Recommendname f23-x86_64/var/lib/rpm/Requirename f23-x86_64/var/lib/rpm/Sha1header f23-x86_64/var/lib/rpm/Sigmd5 f23-x86_64/var/lib/rpm/Suggestname f23-x86_64/var/lib/rpm/Supplementname f23-x86_64/var/lib/rpm/Transfiletriggername f23-x86_64/var/lib/rpm/Triggername /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64/usr/share/nekorpm-pack/f23-x86_64/var/lib/rpm
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/alunux/rpmbuild/BUILD/nekorpm-pack-1.3
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ '[' noarch = noarch ']'
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nekorpm-pack-1.3-1.noarch
+Provides: nekorpm-pack = 1.3-1
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(postun): /bin/sh
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
+Wrote: /home/alunux/rpmbuild/SRPMS/nekorpm-pack-1.3-1.src.rpm
+Wrote: /home/alunux/rpmbuild/RPMS/noarch/nekorpm-pack-1.3-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.beOVqw
++ umask 022
++ cd /home/alunux/rpmbuild/BUILD
++ cd nekorpm-pack-1.3
++ rm -rf /home/alunux/rpmbuild/BUILDROOT/nekorpm-pack-1.3-1.x86_64
++ exit 0

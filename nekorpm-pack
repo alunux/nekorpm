@@ -20,9 +20,10 @@
 . /usr/share/nekorpm/functions/download_package
 . /usr/share/nekorpm/functions/packaging
 
-# "temp" must be declared in the main script
+# "root_temp" must be declared in the main script
 # and assigned with specific directory
-temp="/tmp/nekorpm-pack/"
+root_temp="/tmp/nekorpm-pack-root"
+temp="/tmp/nekorpm-pack"
 
 parse_option ()
 {
@@ -94,21 +95,34 @@ main ()
   done
 }
 
+prepare_root_temp ()
+{
+  mkdir -p "$root_temp"
+  cp -r "$1" "$root_temp"
+}
+
+clean_root_temp ()
+{
+  rm -rf "$root_temp"
+}
+
 make_nekorpm ()
 {
   local releasever=$1
   local rpmdb="/usr/share/nekorpm-pack/f$1-$arch"
   local skip=""
+  clean_root_temp
+  prepare_root_temp "$rpmdb"
   printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
   shift 2
   for i in "$@"
   do
     echo -e "Pembuatan paket nekorpm untuk $i dilakukan ...\n"
-    download_package skip $i $rpmdb $releasever
+    download_package skip $i "$root_temp/f$releasever-$arch" $releasever
     packaging $skip $i $releasever
   done
+  clean_root_temp
 }
-
 
 if [ $# -eq 0 ]; then
   echo -e "Nama paket belum disebutkan, minimal sebutkan 1 paket." \
