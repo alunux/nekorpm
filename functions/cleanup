@@ -6,8 +6,8 @@ rm_temp ()
 {
   local name="$(basename "$0")"
   if [[ "$name" = "nekorpm" ]]; then
-    rm -rf $temp_repo
+    rm -rf "$1"
   elif [[ "$name" = "nekorpm-pack" ]]; then
-    sudo rm -rf $temp
+    sudo rm -rf "$1"
   fi
 }

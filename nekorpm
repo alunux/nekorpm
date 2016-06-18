@@ -28,15 +28,15 @@ temp_repo="/tmp/nekorpm"
 
 see_package_info ()
 {
-  rm_temp
+  rm_temp "$temp_repo"
   local location=''
   local check_corrupt=''
   package_path_info location
   if [[ "$location" != '' ]]; then
     package_corrupt_status check_corrupt "$location"
-    extract_package_info "$location" $check_corrupt
+    extract_package_info "$location" $check_corrupt "$temp_repo"
     print_package_info
-    rm_temp
+    rm_temp "$temp_repo"
     local back
     while true; do
       read -p "Cari nekorpm lain? [Y/n]: " back
@@ -56,19 +56,19 @@ see_package_info ()
 
 installation ()
 {
-  rm_temp
+  rm_temp "$temp_repo"
   local location=''
   local check_corrupt=''
   local user_confirm=''
   package_path_info location
   if [[ "$location" != '' ]]; then
     package_corrupt_status check_corrupt "$location"
-    rm_temp
+    rm_temp "$temp_repo"
     install_confirm user_confirm
-    extract_package_all $check_corrupt "$location" $user_confirm
-    print_package_info
+    extract_package_all $check_corrupt "$location" $user_confirm "$temp_repo"
+    print_package_info "$temp_repo"
     install_process
-    rm_temp
+    rm_temp "$temp_repo"
     ask_install_process_again installation
   fi
 }
@@ -94,7 +94,7 @@ main ()
       see_package_info
       ;;
     3 )
-      rm_temp
+      rm_temp "$temp_repo"
       clear
       exit 0
       ;;

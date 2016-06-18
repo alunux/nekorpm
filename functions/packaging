@@ -19,13 +19,13 @@ packaging ()
     } &> /dev/null
     if [ $? -ne 0 ]; then
       echo "proses pemaketan gagal"
-      rm -rf $temp
+      rm -rf "$4"
       exit 1
     fi
     mv $paket $(cd -)
-    rm -rf $temp
+    rm -rf "$4"
     echo "pemaketan $2 selesai"
-    rm -rf $temp
+    rm -rf "$4"
     cd - &> /dev/null
   fi
   printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -

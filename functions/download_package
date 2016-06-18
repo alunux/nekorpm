@@ -3,14 +3,14 @@
 download_package ()
 {
   local paket="$2-f$4-*.nekorpm"
-  mkdir -p $temp
+  mkdir -p "$5"
   rpm --root=$3 -q $2 &> /dev/null
   if [ $? -ne 0 -a ! -e $paket ]; then
-    cd $temp
+    cd "$5"
     dnf --installroot=$3 --releasever=$4 --setopt keepcache=1 download --resolve $2
     if [ $? -ne 0 ]; then
       echo "proses download gagal"
-      rm -rf $temp
+      rm -rf "$5"
       exit 1
     fi
     echo "proses download $2 selesai"
@@ -18,7 +18,7 @@ download_package ()
   else
     echo "paket $2 telah ada di sistem!"
     echo "paket $2 tidak akan didownload"
-    rm -rf $temp
+    rm -rf "$5"
     eval "$1=true"
   fi
 }

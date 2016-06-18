@@ -5,14 +5,14 @@ print_package_info ()
   echo "-----------------------"
   echo "- Keterangan Aplikasi -"
   printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
-  cat $temp_repo/keterangan
+  cat "$1"/keterangan
   printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
 }
 
 extract_package_info ()
 {
   if [ "$2" = "ok" ]; then
-    mkdir -p $temp_repo
-    tar -xzf "$1" -C $temp_repo "keterangan"
+    mkdir -p "$3"
+    tar -xzf "$1" -C "$3" "keterangan"
   fi
 }

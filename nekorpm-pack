@@ -101,30 +101,26 @@ prepare_root_temp ()
   cp -r "$1" "$root_temp"
 }
 
-clean_root_temp ()
-{
-  rm -rf "$root_temp"
-}
-
 make_nekorpm ()
 {
   local releasever=$1
   local rpmdb="/usr/share/nekorpm-pack/f$1-$arch"
   local skip=""
-  clean_root_temp
+  rm_temp "$root_temp"
   prepare_root_temp "$rpmdb"
   printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
   shift 2
   for i in "$@"
   do
     echo -e "Pembuatan paket nekorpm untuk $i dilakukan ...\n"
-    download_package skip $i "$root_temp/f$releasever-$arch" $releasever
-    packaging $skip $i $releasever
+    download_package skip $i "$root_temp/f$releasever-$arch" $releasever "$temp"
+    packaging $skip $i $releasever "$temp"
   done
-  clean_root_temp
+  rm_temp "$root_temp"
 }
 
-if [ $# -eq 0 ]; then
+print_help ()
+{
   echo -e "Nama paket belum disebutkan, minimal sebutkan 1 paket." \
           "\n\nPenggunaan\t: nekorpm-pack [--arch=arch] [--fedora=versi] app1 app2 ... appN" \
           "\nContoh 1\t: nekorpm-pack geany" \
@@ -132,6 +128,10 @@ if [ $# -eq 0 ]; then
           "\nContoh 3\t: nekorpm-pack --arch=x86_64 --fedora=23 geany gedit" \
           "\nContoh 4\t: nekorpm-pack --fedora=23 geany gedit" \
           "\nContoh 5\t: nekorpm-pack --arch=i686 geany gedit\n"
+}
+
+if [ $# -eq 0 ]; then
+  print_help
   exit 1;
 else
   clear
