@@ -32,13 +32,13 @@ parse_option ()
   for i in "$@"
   do
   case $i in
-      -a=*|--a=*|--arch=*)
+    -a=*|--a=*|--arch=*)
       arch="${i#*=}"
-      shift # past argument=value
+      shift
       ;;
-      -f=*|--f=*|--fedora=*)
+    -f=*|--f=*|--fedora=*)
       fedora="${i#*=}"
-      shift # past argument=value
+      shift
       ;;
   esac
   done
